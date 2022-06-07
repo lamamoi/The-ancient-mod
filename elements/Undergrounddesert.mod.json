@@ -12,10 +12,6 @@
     "underwaterBlock": {
       "value": "Blocks.SANDSTONE#0"
     },
-    "airColor": {
-      "value": 434368270,
-      "falpha": 0.0
-    },
     "grassColor": {
       "value": -7504806,
       "falpha": 0.0
@@ -52,13 +48,13 @@
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
     "rainingPossibility": 0.5,
-    "temperature": 0.8,
+    "temperature": 2.0,
     "baseHeight": 0.1,
-    "heightVariation": 0.2,
+    "heightVariation": 0.30000000000000004,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 10,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
