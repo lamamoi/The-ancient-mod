@@ -4,13 +4,17 @@
   "definition": {
     "name": "Undergrounddesert",
     "groundBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "undergroundBlock": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "underwaterBlock": {
-      "value": "Blocks.SMOOTH_SANDSTONE"
+      "value": "Blocks.SANDSTONE#0"
+    },
+    "airColor": {
+      "value": 434368270,
+      "falpha": 0.0
     },
     "grassColor": {
       "value": -7504806,
@@ -47,25 +51,25 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "rainingPossibility": 0.0,
-    "temperature": 1.6,
+    "rainingPossibility": 0.5,
+    "temperature": 1.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.30000000000000004,
+    "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
+    "biomeWeight": 10,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 0,
+    "grassPerChunk": 4,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 1,
+    "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 2,
+    "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
-    "cactiPerChunk": 1,
-    "treesPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -82,7 +86,7 @@
       "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": true,
+    "spawnMineshaft": false,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -103,8 +107,8 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Fossils",
-      "Ores"
+      "Ores",
+      "FrozenTopLayer"
     ],
     "spawnEntries": [
       {
@@ -113,25 +117,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 16,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntityCreeper"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 12,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "EntitySkeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 14,
+        "weight": 3,
         "spawnType": "monster"
       }
     ]
