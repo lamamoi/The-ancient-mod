@@ -15,6 +15,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "undergroundmesa"
+    },
+    {
+      "name": "Desertspawner",
+      "type": "structure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desertspawner"
+    },
+    {
+      "name": "Desertspawnerloot",
+      "type": "loottable",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desertspawnerloot"
     }
   ],
   "variable_elements": [],

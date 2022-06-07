@@ -108,6 +108,25 @@
       "Fossils",
       "ExtraGoldOre"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 9,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 6,
+        "spawnType": "monster"
+      }
+    ]
   }
 }
