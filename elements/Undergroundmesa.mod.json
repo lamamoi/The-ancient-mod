@@ -48,7 +48,7 @@
     "particlesProbability": 0.5,
     "biomeCategory": "MESA",
     "rainingPossibility": 0.5,
-    "temperature": 2.0,
+    "temperature": 1.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
@@ -83,7 +83,7 @@
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
-    "spawnMineshaftMesa": false,
+    "spawnMineshaftMesa": true,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
@@ -104,7 +104,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "ExtraGoldOre"
     ],
     "spawnEntries": []
   }
