@@ -4,13 +4,13 @@
   "definition": {
     "name": "Undergrounddesert",
     "groundBlock": {
-      "value": "Blocks.SMOOTH_SANDSTONE"
+      "value": "Blocks.SAND#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.SMOOTH_SANDSTONE"
+      "value": "Blocks.SANDSTONE#0"
     },
     "underwaterBlock": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "grassColor": {
       "value": -7504806,
@@ -113,7 +113,25 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 10,
+        "weight": 16,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 12,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 14,
         "spawnType": "monster"
       }
     ]
