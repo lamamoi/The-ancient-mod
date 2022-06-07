@@ -1,19 +1,19 @@
 {
   "mod_elements": [
     {
-      "name": "Sexlore",
+      "name": "Undergrounddesert",
       "type": "biome",
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sexlore"
+      "registry_name": "undergrounddesert"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "biome.the_ancient_mod.sexlore": "Sexlore"
+      "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert"
     }
   },
   "foldersRoot": {

@@ -30,7 +30,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.mcreator.theancientmod.world.biome.SexloreBiome;
+import net.mcreator.theancientmod.world.biome.UndergrounddesertBiome;
 import net.mcreator.theancientmod.TheAncientModMod;
 
 import java.util.Map;
@@ -42,12 +42,12 @@ import com.mojang.datafixers.util.Pair;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TheAncientModModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, TheAncientModMod.MODID);
-	public static final RegistryObject<Biome> SEXLORE = REGISTRY.register("sexlore", () -> SexloreBiome.createBiome());
+	public static final RegistryObject<Biome> UNDERGROUNDDESERT = REGISTRY.register("undergrounddesert", () -> UndergrounddesertBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			SexloreBiome.init();
+			UndergrounddesertBiome.init();
 		});
 	}
 
@@ -66,10 +66,10 @@ public class TheAncientModModBiomes {
 					// Inject biomes to biome source
 					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-						parameters.add(new Pair<>(SexloreBiome.PARAMETER_POINT,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()))));
-						parameters.add(new Pair<>(SexloreBiome.PARAMETER_POINT_UNDERGROUND,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()))));
+						parameters.add(new Pair<>(UndergrounddesertBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()))));
+						parameters.add(new Pair<>(UndergrounddesertBiome.PARAMETER_POINT_UNDERGROUND,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -83,13 +83,13 @@ public class TheAncientModModBiomes {
 						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1,
-									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()),
-											Blocks.CHISELED_POLISHED_BLACKSTONE.defaultBlockState(), Blocks.SPRUCE_WOOD.defaultBlockState(),
-											Blocks.WEATHERED_COPPER.defaultBlockState()));
+									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
+											Blocks.SMOOTH_SANDSTONE.defaultBlockState(), Blocks.SMOOTH_SANDSTONE.defaultBlockState(),
+											Blocks.SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
-									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()),
-											Blocks.CHISELED_POLISHED_BLACKSTONE.defaultBlockState(), Blocks.SPRUCE_WOOD.defaultBlockState(),
-											Blocks.WEATHERED_COPPER.defaultBlockState()));
+									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
+											Blocks.SMOOTH_SANDSTONE.defaultBlockState(), Blocks.SMOOTH_SANDSTONE.defaultBlockState(),
+											Blocks.SANDSTONE.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),
@@ -102,39 +102,6 @@ public class TheAncientModModBiomes {
 					}
 				}
 
-				if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.NETHER_LOCATION)) {
-					ChunkGenerator chunkGenerator = entry.getValue().generator();
-					// Inject biomes to biome source
-					if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
-						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-						parameters.add(new Pair<>(SexloreBiome.PARAMETER_POINT,
-								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()))));
-						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
-								noiseSource.preset);
-						chunkGenerator.biomeSource = moddedNoiseSource;
-						chunkGenerator.runtimeBiomeSource = moddedNoiseSource;
-					}
-					// Inject surface rules
-					if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
-						NoiseGeneratorSettings noiseGeneratorSettings = noiseGenerator.settings.value();
-						SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
-						if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
-							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-							surfaceRules.add(2,
-									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, SEXLORE.getId()),
-											Blocks.CHISELED_POLISHED_BLACKSTONE.defaultBlockState(), Blocks.SPRUCE_WOOD.defaultBlockState(),
-											Blocks.WEATHERED_COPPER.defaultBlockState()));
-							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
-									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
-									noiseGeneratorSettings.noiseRouter(),
-									SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])),
-									noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
-									noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(),
-									noiseGeneratorSettings.useLegacyRandomSource());
-							noiseGenerator.settings = new Holder.Direct(moddedNoiseGeneratorSettings);
-						}
-					}
-				}
 			}
 		}
 

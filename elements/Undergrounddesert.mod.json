@@ -2,18 +2,34 @@
   "_fv": 28,
   "_type": "biome",
   "definition": {
-    "name": "Sexlore",
+    "name": "Undergrounddesert",
     "groundBlock": {
-      "value": "Blocks.CHISELED_POLISHED_BLACKSTONE"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "undergroundBlock": {
-      "value": "Blocks.SPRUCE_WOOD"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "underwaterBlock": {
-      "value": "Blocks.WEATHERED_COPPER"
+      "value": "Blocks.SANDSTONE#0"
+    },
+    "airColor": {
+      "value": 434368270,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -7504806,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -7110824,
+      "falpha": 0.0
     },
     "waterColor": {
-      "value": -2686721,
+      "value": -4547486,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -860317087,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -34,13 +50,13 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "MESA",
+    "biomeCategory": "DESERT",
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.8,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
-    "spawnBiomeNether": true,
+    "spawnBiomeNether": false,
     "spawnInCaves": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
@@ -94,6 +110,16 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityHusk"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 3,
+        "spawnType": "monster"
+      }
+    ]
   }
 }
