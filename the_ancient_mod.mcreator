@@ -31,6 +31,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "desertspawnerloot"
+    },
+    {
+      "name": "MesaSpawner",
+      "type": "structure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mesa_spawner"
+    },
+    {
+      "name": "Mesaspawnerloot",
+      "type": "loottable",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mesaspawnerloot"
     }
   ],
   "variable_elements": [],

@@ -1,16 +1,16 @@
 
 package net.mcreator.theancientmod.world.features;
 
-public class DesertspawnerFeature extends Feature<NoneFeatureConfiguration> {
+public class MesaSpawnerFeature extends Feature<NoneFeatureConfiguration> {
 
-	public static DesertspawnerFeature FEATURE = null;
+	public static MesaSpawnerFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new DesertspawnerFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:desertspawner", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:desertspawner", CONFIGURED_FEATURE, List.of());
+		FEATURE = new MesaSpawnerFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:mesa_spawner", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:mesa_spawner", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 
@@ -18,7 +18,7 @@ public class DesertspawnerFeature extends Feature<NoneFeatureConfiguration> {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergrounddesert"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergroundmesa"));
 
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
@@ -26,7 +26,7 @@ public class DesertspawnerFeature extends Feature<NoneFeatureConfiguration> {
 
 	private StructureTemplate template = null;
 
-	public DesertspawnerFeature() {
+	public MesaSpawnerFeature() {
 		super(NoneFeatureConfiguration.CODEC);
 
 		base_blocks = List.of(Blocks.STONE, Blocks.DEEPSLATE);
@@ -38,13 +38,13 @@ public class DesertspawnerFeature extends Feature<NoneFeatureConfiguration> {
 			return false;
 
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_ancient_mod", "desertspawner"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_ancient_mod", "mesaspawner"));
 
 		if (template == null)
 			return false;
 
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 2400) {
+		if ((context.random().nextInt(1000000) + 1) <= 10000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
@@ -62,7 +62,7 @@ public class DesertspawnerFeature extends Feature<NoneFeatureConfiguration> {
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
-								.addProcessor(BlockIgnoreProcessor.STRUCTURE_AND_AIR).setIgnoreEntities(false),
+								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
 						context.random(), 2)) {
 
 					anyPlaced = true;

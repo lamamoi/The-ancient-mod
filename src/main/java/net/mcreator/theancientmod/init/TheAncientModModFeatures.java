@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.theancientmod.world.features.MesaSpawnerFeature;
 import net.mcreator.theancientmod.world.features.DesertspawnerFeature;
 import net.mcreator.theancientmod.TheAncientModMod;
 
@@ -31,6 +32,8 @@ public class TheAncientModModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> DESERTSPAWNER = register("desertspawner", DesertspawnerFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_STRUCTURES, DesertspawnerFeature.GENERATE_BIOMES, DesertspawnerFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MESA_SPAWNER = register("mesa_spawner", MesaSpawnerFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_STRUCTURES, MesaSpawnerFeature.GENERATE_BIOMES, MesaSpawnerFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
