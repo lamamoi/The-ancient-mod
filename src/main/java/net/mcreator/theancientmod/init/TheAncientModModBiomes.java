@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.theancientmod.world.biome.UndergroundmesaBiome;
 import net.mcreator.theancientmod.world.biome.UndergrounddesertBiome;
 import net.mcreator.theancientmod.TheAncientModMod;
 
@@ -43,11 +44,13 @@ import com.mojang.datafixers.util.Pair;
 public class TheAncientModModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, TheAncientModMod.MODID);
 	public static final RegistryObject<Biome> UNDERGROUNDDESERT = REGISTRY.register("undergrounddesert", () -> UndergrounddesertBiome.createBiome());
+	public static final RegistryObject<Biome> UNDERGROUNDMESA = REGISTRY.register("undergroundmesa", () -> UndergroundmesaBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			UndergrounddesertBiome.init();
+			UndergroundmesaBiome.init();
 		});
 	}
 
@@ -68,8 +71,12 @@ public class TheAncientModModBiomes {
 						List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 						parameters.add(new Pair<>(UndergrounddesertBiome.PARAMETER_POINT,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()))));
+						parameters.add(new Pair<>(UndergroundmesaBiome.PARAMETER_POINT,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()))));
 						parameters.add(new Pair<>(UndergrounddesertBiome.PARAMETER_POINT_UNDERGROUND,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()))));
+						parameters.add(new Pair<>(UndergroundmesaBiome.PARAMETER_POINT_UNDERGROUND,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -87,9 +94,17 @@ public class TheAncientModModBiomes {
 											Blocks.SMOOTH_SANDSTONE.defaultBlockState(), Blocks.SMOOTH_SANDSTONE.defaultBlockState(),
 											Blocks.SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
+									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()),
+											Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
+											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
+							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
 											Blocks.SMOOTH_SANDSTONE.defaultBlockState(), Blocks.SMOOTH_SANDSTONE.defaultBlockState(),
 											Blocks.SANDSTONE.defaultBlockState()));
+							surfaceRules.add(1,
+									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()),
+											Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
+											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

@@ -7,12 +7,21 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "undergrounddesert"
+    },
+    {
+      "name": "Undergroundmesa",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undergroundmesa"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
       "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert"
     }
   },

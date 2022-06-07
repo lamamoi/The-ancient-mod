@@ -7,14 +7,10 @@
       "value": "Blocks.SAND#1"
     },
     "undergroundBlock": {
-      "value": "Blocks.SMOOTH_RED_SANDSTONE"
-    },
-    "underwaterBlock": {
       "value": "Blocks.RED_SANDSTONE#0"
     },
-    "airColor": {
-      "value": 653714774,
-      "falpha": 0.0
+    "underwaterBlock": {
+      "value": "Blocks.SMOOTH_RED_SANDSTONE"
     },
     "grassColor": {
       "value": -10464196,
@@ -25,11 +21,11 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -4021659,
+      "value": -1723304,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -859659675,
+      "value": 853914712,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -52,13 +48,13 @@
     "particlesProbability": 0.5,
     "biomeCategory": "MESA",
     "rainingPossibility": 0.5,
-    "temperature": 0.9,
+    "temperature": 2.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 10,
+    "biomeWeight": 3,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
