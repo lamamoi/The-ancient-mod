@@ -29,13 +29,13 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import java.util.List;
 
 public class UndergroundmesaBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.623809523809f, 0.709523809523f),
-			Climate.Parameter.span(-0.042857142857f, 0.042857142857f), Climate.Parameter.span(0.467142857143f, 0.552857142857f),
-			Climate.Parameter.span(0.757142857143f, 0.842857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.239731521856f, -0.154017236142f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.580952380952f, 0.75238095238f),
+			Climate.Parameter.span(-0.085714285714f, 0.085714285714f), Climate.Parameter.span(0.424285714286f, 0.595714285714f),
+			Climate.Parameter.span(0.714285714286f, 0.885714285714f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.282588664713f, -0.111160093285f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.21f, 0.81f), Climate.Parameter.span(0.5f, 1.1f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.496874378999f, 0.103125621001f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.09f, 1.11f), Climate.Parameter.span(0.2f, 1.4f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.796874378999f, 0.403125621001f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-1723304).waterFogColor(853914712)
