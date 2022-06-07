@@ -16,7 +16,6 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
-import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -27,15 +26,15 @@ import net.minecraft.core.BlockPos;
 import java.util.Set;
 import java.util.List;
 
-public class MesaSpawnerFeature extends Feature<NoneFeatureConfiguration> {
-	public static MesaSpawnerFeature FEATURE = null;
+public class Ruin1Feature extends Feature<NoneFeatureConfiguration> {
+	public static Ruin1Feature FEATURE = null;
 	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new MesaSpawnerFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:mesa_spawner", FEATURE, FeatureConfiguration.NONE);
-		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:mesa_spawner", CONFIGURED_FEATURE, List.of());
+		FEATURE = new Ruin1Feature();
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:ruin_1", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:ruin_1", CONFIGURED_FEATURE, List.of());
 		return FEATURE;
 	}
 
@@ -43,14 +42,14 @@ public class MesaSpawnerFeature extends Feature<NoneFeatureConfiguration> {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergroundmesa"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("forest"), new ResourceLocation("plains"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
-	public MesaSpawnerFeature() {
+	public Ruin1Feature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.STONE, Blocks.DEEPSLATE);
+		base_blocks = List.of(Blocks.GRASS_BLOCK);
 	}
 
 	@Override
@@ -58,17 +57,16 @@ public class MesaSpawnerFeature extends Feature<NoneFeatureConfiguration> {
 		if (!generate_dimensions.contains(context.level().getLevel().dimension()))
 			return false;
 		if (template == null)
-			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_ancient_mod", "mesaspawner"));
+			template = context.level().getLevel().getStructureManager().getOrCreate(new ResourceLocation("the_ancient_mod", "ruin1"));
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 24617) {
+		if ((context.random().nextInt(1000000) + 1) <= 1748) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
-				j = Mth.nextInt(context.random(), 8 + context.level().getMinBuildHeight(), Math.max(j, 9 + context.level().getMinBuildHeight()));
+				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
