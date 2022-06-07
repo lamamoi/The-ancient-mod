@@ -1,20 +1,9 @@
 {
-  "mod_elements": [
-    {
-      "name": "Sexlore",
-      "type": "biome",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sexlore"
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "biome.the_ancient_mod.sexlore": "Sexlore"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
