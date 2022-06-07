@@ -47,8 +47,8 @@
     },
     "particlesProbability": 0.5,
     "biomeCategory": "DESERT",
-    "rainingPossibility": 0.5,
-    "temperature": 2.0,
+    "rainingPossibility": 0.0,
+    "temperature": 1.6,
     "baseHeight": 0.1,
     "heightVariation": 0.30000000000000004,
     "spawnBiome": true,
@@ -56,16 +56,16 @@
     "spawnInCaves": true,
     "biomeWeight": 5,
     "biomeDictionaryTypes": [],
-    "grassPerChunk": 4,
+    "grassPerChunk": 0,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
+    "flowersPerChunk": 1,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPatchesPerChunk": 0,
+    "sandPatchesPerChunk": 2,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
-    "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "cactiPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -82,7 +82,7 @@
       "value": ""
     },
     "spawnStronghold": false,
-    "spawnMineshaft": false,
+    "spawnMineshaft": true,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",
@@ -103,8 +103,8 @@
     "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
-      "Ores",
-      "FrozenTopLayer"
+      "Fossils",
+      "Ores"
     ],
     "spawnEntries": [
       {
@@ -113,7 +113,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 3,
+        "weight": 10,
         "spawnType": "monster"
       }
     ]
