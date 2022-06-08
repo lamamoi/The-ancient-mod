@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Red Skeleton",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "Modelcustom_model",
     "mobModelTexture": "texturered.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
