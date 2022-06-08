@@ -25,13 +25,13 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import java.util.List;
 
 public class UndergrounddesertBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.661904761905f, 0.804761904763f),
-			Climate.Parameter.span(-1.071428571429f, -0.928571428571f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
-			Climate.Parameter.span(0.628571428571f, 0.771428571429f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.233713411356f, -0.090856268498f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.619047619048f, 0.84761904762f),
+			Climate.Parameter.span(-1.114285714286f, -0.885714285714f), Climate.Parameter.span(0.395714285714f, 0.624285714286f),
+			Climate.Parameter.span(0.385714285714f, 0.614285714286f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.276570554213f, -0.047999125641f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.01f, 1.01f), Climate.Parameter.span(0.2f, 1.2f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.662284839927f, 0.337715160073f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(-0.3f, 1.3f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.962284839927f, 0.637715160073f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-4547486).waterFogColor(-860317087)
@@ -56,7 +56,7 @@ public class UndergrounddesertBiome {
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.HUSK, 16, 1, 2));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CREEPER, 6, 1, 1));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 9, 1, 1));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.UNDERGROUND).temperature(1.6f)
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.DESERT).temperature(1.6f)
 				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
 				.build();
 	}
