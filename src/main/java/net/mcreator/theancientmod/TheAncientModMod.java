@@ -26,7 +26,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.theancientmod.init.TheAncientModModItems;
 import net.mcreator.theancientmod.init.TheAncientModModFeatures;
+import net.mcreator.theancientmod.init.TheAncientModModEntities;
 import net.mcreator.theancientmod.init.TheAncientModModBiomes;
 
 import java.util.function.Supplier;
@@ -45,6 +47,9 @@ public class TheAncientModMod {
 	public TheAncientModMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		TheAncientModModItems.REGISTRY.register(bus);
+		TheAncientModModEntities.REGISTRY.register(bus);
 
 		TheAncientModModFeatures.REGISTRY.register(bus);
 

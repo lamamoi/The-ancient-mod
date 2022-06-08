@@ -55,6 +55,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ruin_1"
+    },
+    {
+      "name": "Redskeleton",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redskeleton"
     }
   ],
   "variable_elements": [],
@@ -62,7 +70,9 @@
   "language_map": {
     "en_us": {
       "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
-      "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert"
+      "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
+      "item.the_ancient_mod.redskeleton_spawn_egg": "Red Skeleton Spawn Egg",
+      "entity.the_ancient_mod.redskeleton": "Red Skeleton"
     }
   },
   "foldersRoot": {
