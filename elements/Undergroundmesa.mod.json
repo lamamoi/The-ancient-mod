@@ -46,16 +46,18 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "UNDERGROUND",
-    "rainingPossibility": 0.5,
+    "biomeCategory": "MESA",
+    "rainingPossibility": 0.0,
     "temperature": 2.0,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeWeight": 7,
+    "biomeDictionaryTypes": [
+      "WASTELAND"
+    ],
     "grassPerChunk": 1,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -106,7 +108,9 @@
       "Ores",
       "FrozenTopLayer",
       "Fossils",
-      "ExtraGoldOre"
+      "ExtraGoldOre",
+      "DesertFeatures",
+      "DeadBushes"
     ],
     "spawnEntries": [
       {

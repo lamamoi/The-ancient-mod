@@ -1,0 +1,134 @@
+{
+  "_fv": 28,
+  "_type": "biome",
+  "definition": {
+    "name": "Undergroundjungle",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.MOSS_BLOCK"
+    },
+    "grassColor": {
+      "value": -12917632,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -15218592,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -15747916,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16084591,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "SPORE_BLOSSOM_AIR"
+    },
+    "particlesProbability": 0.1,
+    "biomeCategory": "JUNGLE",
+    "rainingPossibility": 0.9,
+    "temperature": 0.95,
+    "baseHeight": 0.2,
+    "heightVariation": 0.2,
+    "spawnBiome": false,
+    "spawnBiomeNether": false,
+    "spawnInCaves": true,
+    "biomeWeight": 7,
+    "biomeDictionaryTypes": [
+      "JUNGLE"
+    ],
+    "grassPerChunk": 5,
+    "seagrassPerChunk": 3,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 1,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": true,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer",
+      "JungleGrass",
+      "JungleTreeForest"
+    ],
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 1,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCaveSpider"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 1,
+        "spawnType": "monster"
+      }
+    ]
+  }
+}

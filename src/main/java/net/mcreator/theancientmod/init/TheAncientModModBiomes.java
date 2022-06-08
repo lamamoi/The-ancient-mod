@@ -31,6 +31,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.theancientmod.world.biome.UndergroundmesaBiome;
+import net.mcreator.theancientmod.world.biome.UndergroundjungleBiome;
 import net.mcreator.theancientmod.world.biome.UndergrounddesertBiome;
 import net.mcreator.theancientmod.TheAncientModMod;
 
@@ -45,12 +46,14 @@ public class TheAncientModModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, TheAncientModMod.MODID);
 	public static final RegistryObject<Biome> UNDERGROUNDDESERT = REGISTRY.register("undergrounddesert", () -> UndergrounddesertBiome.createBiome());
 	public static final RegistryObject<Biome> UNDERGROUNDMESA = REGISTRY.register("undergroundmesa", () -> UndergroundmesaBiome.createBiome());
+	public static final RegistryObject<Biome> UNDERGROUNDJUNGLE = REGISTRY.register("undergroundjungle", () -> UndergroundjungleBiome.createBiome());
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			UndergrounddesertBiome.init();
 			UndergroundmesaBiome.init();
+			UndergroundjungleBiome.init();
 		});
 	}
 
@@ -77,6 +80,8 @@ public class TheAncientModModBiomes {
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()))));
 						parameters.add(new Pair<>(UndergroundmesaBiome.PARAMETER_POINT_UNDERGROUND,
 								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()))));
+						parameters.add(new Pair<>(UndergroundjungleBiome.PARAMETER_POINT_UNDERGROUND,
+								biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDJUNGLE.getId()))));
 
 						MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters),
 								noiseSource.preset);
@@ -97,6 +102,8 @@ public class TheAncientModModBiomes {
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()),
 											Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
 											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
+							surfaceRules.add(1, anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDJUNGLE.getId()),
+									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.MOSS_BLOCK.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
 											Blocks.SAND.defaultBlockState(), Blocks.SANDSTONE.defaultBlockState(),

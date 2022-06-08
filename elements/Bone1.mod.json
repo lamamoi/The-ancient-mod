@@ -8,7 +8,7 @@
     "spawnProbability": 80000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
-    "spawnLocation": "Ground",
+    "spawnLocation": "Underground",
     "spawnHeightOffset": 1,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
@@ -17,10 +17,10 @@
     ],
     "restrictionBlocks": [
       {
-        "value": "Blocks.SANDSTONE#0"
+        "value": "Blocks.SAND#1"
       },
       {
-        "value": "Blocks.RED_SANDSTONE#0"
+        "value": "Blocks.SAND#0"
       }
     ],
     "restrictionBiomes": [
@@ -31,6 +31,6 @@
         "value": "CUSTOM:Undergrounddesert"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK"
   }
 }

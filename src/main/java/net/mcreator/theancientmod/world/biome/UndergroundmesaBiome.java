@@ -1,6 +1,8 @@
 
 package net.mcreator.theancientmod.world.biome;
 
+import net.minecraftforge.common.BiomeDictionary;
+
 import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
@@ -18,23 +20,26 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.core.Registry;
 
 import net.mcreator.theancientmod.init.TheAncientModModEntities;
+import net.mcreator.theancientmod.init.TheAncientModModBiomes;
 
 import java.util.List;
 
 public class UndergroundmesaBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.857142857143f, 1.142857142857f),
-			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
-			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.339731521856f, -0.054017236142f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.9f, 1.1f),
+			Climate.Parameter.span(-1.1f, -0.9f), Climate.Parameter.span(0.41f, 0.61f), Climate.Parameter.span(0.7f, 0.9f),
+			Climate.Parameter.point(0), Climate.Parameter.span(-0.296874378999f, -0.096874378999f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.49f, 1.51f), Climate.Parameter.span(-0.2f, 1.8f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.196874378999f, 0.803125621001f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.19f, 1.21f), Climate.Parameter.span(0.1f, 1.5f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.896874378999f, 0.503125621001f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-1723304).waterFogColor(853914712)
@@ -54,6 +59,8 @@ public class UndergroundmesaBiome {
 										List.of(Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState()))),
 						List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_TOP_SOLID, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDesertVegetation(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDesertExtraDecoration(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addExtraGold(biomeGenerationSettings);
 		BiomeDefaultFeatures.addFossilDecoration(biomeGenerationSettings);
@@ -62,11 +69,13 @@ public class UndergroundmesaBiome {
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 9, 1, 1));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CREEPER, 6, 1, 1));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(TheAncientModModEntities.REDSKELETON.get(), 15, 1, 1));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.UNDERGROUND).temperature(2f)
-				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.MESA).temperature(2f).downfall(0f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 
 	public static void init() {
+		BiomeDictionary.addTypes(
+				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(TheAncientModModBiomes.UNDERGROUNDMESA.get())),
+				BiomeDictionary.Type.WASTELAND);
 	}
 }

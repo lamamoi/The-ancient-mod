@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -50,7 +51,7 @@ public class Bone2Feature extends Feature<NoneFeatureConfiguration> {
 
 	public Bone2Feature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.RED_SANDSTONE, Blocks.SANDSTONE);
+		base_blocks = List.of(Blocks.RED_SAND, Blocks.SAND);
 	}
 
 	@Override
@@ -67,14 +68,15 @@ public class Bone2Feature extends Feature<NoneFeatureConfiguration> {
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
+				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k);
+				j = Mth.nextInt(context.random(), 8 + context.level().getMinBuildHeight(), Math.max(j, 9 + context.level().getMinBuildHeight()));
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
-				BlockPos spawnTo = new BlockPos(i + 0, j + 1, k + 0);
+				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
-								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
+								.addProcessor(BlockIgnoreProcessor.STRUCTURE_AND_AIR).setIgnoreEntities(false),
 						context.random(), 2)) {
 					anyPlaced = true;
 				}

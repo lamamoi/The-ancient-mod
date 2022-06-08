@@ -20,17 +20,7 @@
         "value": "Blocks.GRASS"
       }
     ],
-    "restrictionBiomes": [
-      {
-        "value": "plains"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "forest_hills"
-      }
-    ],
+    "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

@@ -1,0 +1,42 @@
+{
+  "_fv": 28,
+  "_type": "structure",
+  "definition": {
+    "structure": "silverfishnests",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 7800,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Underground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.DEEPSLATE"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "smaller_extreme_hills"
+      },
+      {
+        "value": "mutated_taiga"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "snowy_mountains"
+      },
+      {
+        "value": "mutated_extreme_hills_with_trees"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

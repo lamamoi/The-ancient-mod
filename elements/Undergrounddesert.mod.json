@@ -46,16 +46,18 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "UNDERGROUND",
+    "biomeCategory": "DESERT",
     "rainingPossibility": 0.0,
-    "temperature": 1.6,
+    "temperature": 1.9,
     "baseHeight": 0.1,
     "heightVariation": 0.30000000000000004,
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
-    "biomeDictionaryTypes": [],
+    "biomeWeight": 7,
+    "biomeDictionaryTypes": [
+      "SANDY"
+    ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 1,
@@ -104,7 +106,9 @@
     "defaultFeatures": [
       "Caves",
       "Fossils",
-      "Ores"
+      "Ores",
+      "DesertFeatures",
+      "DeadBushes"
     ],
     "spawnEntries": [
       {
