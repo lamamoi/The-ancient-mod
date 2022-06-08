@@ -26,13 +26,13 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import java.util.List;
 
 public class UndergroundmesaBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.857142857143f, 1.142857142857f),
-			Climate.Parameter.span(-0.142857142857f, 0.142857142857f), Climate.Parameter.span(0.367142857143f, 0.652857142857f),
-			Climate.Parameter.span(0.657142857143f, 0.942857142857f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.339731521856f, -0.054017236142f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.885714285714f, 1.114285714286f),
+			Climate.Parameter.span(-0.114285714286f, 0.114285714286f), Climate.Parameter.span(0.395714285714f, 0.624285714286f),
+			Climate.Parameter.span(0.685714285714f, 0.914285714286f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.311160093285f, -0.082588664713f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.49f, 1.51f), Climate.Parameter.span(-0.2f, 1.8f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1.196874378999f, 0.803125621001f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(0f, 1.6f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.996874378999f, 0.603125621001f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-1723304).waterFogColor(853914712)
@@ -59,9 +59,8 @@ public class UndergroundmesaBiome {
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.SKELETON, 9, 1, 1));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CREEPER, 6, 1, 1));
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.UNDERGROUND).temperature(2f)
-				.downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.MESA).temperature(2f).downfall(0.5f)
+				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 
 	public static void init() {

@@ -46,7 +46,7 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "UNDERGROUND",
+    "biomeCategory": "DESERT",
     "rainingPossibility": 0.0,
     "temperature": 1.6,
     "baseHeight": 0.1,
@@ -54,7 +54,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
+    "biomeWeight": 8,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
