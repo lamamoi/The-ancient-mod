@@ -95,7 +95,7 @@ public class TheAncientModModBiomes {
 											Blocks.SMOOTH_SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()),
-											Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
+											Blocks.AIR.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
 											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
@@ -103,7 +103,7 @@ public class TheAncientModModBiomes {
 											Blocks.SMOOTH_SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDMESA.getId()),
-											Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
+											Blocks.AIR.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState(),
 											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),

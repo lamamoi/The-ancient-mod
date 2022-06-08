@@ -49,7 +49,7 @@ public class UndergroundmesaBiome {
 				PlacementUtils.register("the_ancient_mod:disk_sand_undergroundmesa",
 						FeatureUtils.register("the_ancient_mod:disk_sand_undergroundmesa", Feature.DISK,
 								new DiskConfiguration(Blocks.SAND.defaultBlockState(), UniformInt.of(2, 6), 2,
-										List.of(Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState()))),
+										List.of(Blocks.AIR.defaultBlockState(), Blocks.RED_SANDSTONE.defaultBlockState()))),
 						List.of(CountPlacement.of(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_TOP_SOLID, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
