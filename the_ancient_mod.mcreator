@@ -191,6 +191,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "redrock_3"
+    },
+    {
+      "name": "Dugk",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dugk"
     }
   ],
   "variable_elements": [],
@@ -199,6 +207,8 @@
     "en_us": {
       "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
       "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
+      "entity.the_ancient_mod.dugk": "Dugk",
+      "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg",
       "item.the_ancient_mod.redskeleton_spawn_egg": "Red Skeleton Spawn Egg",
       "entity.the_ancient_mod.redskeleton": "Red Skeleton"
     }

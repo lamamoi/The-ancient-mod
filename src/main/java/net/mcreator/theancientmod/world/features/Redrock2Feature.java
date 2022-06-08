@@ -50,7 +50,7 @@ public class Redrock2Feature extends Feature<NoneFeatureConfiguration> {
 
 	public Redrock2Feature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.RED_SAND);
+		base_blocks = List.of(Blocks.RED_SANDSTONE);
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class Redrock2Feature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 32000) {
+		if ((context.random().nextInt(1000000) + 1) <= 100000) {
 			int count = context.random().nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
@@ -70,7 +70,7 @@ public class Redrock2Feature extends Feature<NoneFeatureConfiguration> {
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
-				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
+				BlockPos spawnTo = new BlockPos(i + 0, j + 1, k + 0);
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())

@@ -19,4 +19,6 @@ public class TheAncientModModItems {
 	public static final RegistryObject<Item> REDSKELETON = REGISTRY.register("redskeleton_spawn_egg",
 			() -> new ForgeSpawnEggItem(TheAncientModModEntities.REDSKELETON, -8630525, -8643837,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DUGK = REGISTRY.register("dugk_spawn_egg",
+			() -> new ForgeSpawnEggItem(TheAncientModModEntities.DUGK, -16740394, -671929, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }

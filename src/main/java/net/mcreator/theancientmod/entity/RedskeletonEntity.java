@@ -28,6 +28,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
@@ -38,11 +39,17 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.theancientmod.init.TheAncientModModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class RedskeletonEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergroundmesa"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(TheAncientModModEntities.REDSKELETON.get(), 14, 1, 1));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(TheAncientModModEntities.REDSKELETON.get(), 14, 1, 1));
 	}
 
 	public RedskeletonEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -53,6 +60,7 @@ public class RedskeletonEntity extends Monster {
 		super(type, world);
 		xpReward = 22;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.GOLDEN_SWORD));
 	}
 
 	@Override
@@ -123,8 +131,8 @@ public class RedskeletonEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.4);
-		builder = builder.add(Attributes.MAX_HEALTH, 20);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 22);
 		builder = builder.add(Attributes.ARMOR, 3);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);
 		return builder;

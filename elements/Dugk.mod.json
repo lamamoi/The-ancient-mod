@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Red Skeleton",
+    "mobName": "Dugk",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "texturered.png",
+    "mobModelName": "Modelcustom_model",
+    "mobModelTexture": "dugk.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8630525,
+      "value": -16740394,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -8643837,
+      "value": -671929,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -27,7 +27,7 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.GOLDEN_SWORD"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -45,15 +45,15 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 2,
-    "attackKnockback": 0.0,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 0,
+    "attackKnockback": 0.1,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.30000000000000004,
-    "armorBaseValue": 3.0,
-    "trackingRange": 23,
-    "health": 22,
-    "xpAmount": 22,
+    "movementSpeed": 0.19999999999999998,
+    "armorBaseValue": 0.1,
+    "trackingRange": 38,
+    "health": 6,
+    "xpAmount": 2,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -66,8 +66,8 @@
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
-    "immuneToCactus": true,
-    "immuneToDrowning": true,
+    "immuneToCactus": false,
+    "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
@@ -77,19 +77,19 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.BONE"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.wither_skeleton.ambient"
+      "value": "entity.parrot.imitate.endermite"
     },
     "hurtSound": {
-      "value": "entity.wither_skeleton.hurt"
+      "value": "entity.parrot.eat"
     },
     "deathSound": {
-      "value": "entity.skeleton.death"
+      "value": "entity.parrot.hurt"
     },
     "stepSound": {
-      "value": "block.nether_bricks.step"
+      "value": "entity.chicken.step"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"breed\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -111,15 +111,15 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 14,
-    "mobSpawningType": "monster",
+    "spawningProbability": 3,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Undergroundmesa"
+        "value": "roofed_forest"
       }
     ],
-    "spawnInDungeons": true
+    "spawnInDungeons": false
   }
 }

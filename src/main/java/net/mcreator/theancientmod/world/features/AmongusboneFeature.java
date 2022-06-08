@@ -50,7 +50,7 @@ public class AmongusboneFeature extends Feature<NoneFeatureConfiguration> {
 
 	public AmongusboneFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.SAND, Blocks.RED_SAND);
+		base_blocks = List.of(Blocks.RED_SANDSTONE, Blocks.SANDSTONE);
 	}
 
 	@Override
@@ -70,7 +70,7 @@ public class AmongusboneFeature extends Feature<NoneFeatureConfiguration> {
 				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
 				if (!base_blocks.contains(context.level().getBlockState(new BlockPos(i, j, k)).getBlock()))
 					continue;
-				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
+				BlockPos spawnTo = new BlockPos(i + 0, j + 1, k + 0);
 				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
 						new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)])
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
