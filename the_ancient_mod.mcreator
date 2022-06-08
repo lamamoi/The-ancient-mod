@@ -47,6 +47,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mesaspawnerloot"
+    },
+    {
+      "name": "Ruin1",
+      "type": "structure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruin_1"
     }
   ],
   "variable_elements": [],

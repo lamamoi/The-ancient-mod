@@ -2,13 +2,13 @@
   "_fv": 28,
   "_type": "structure",
   "definition": {
-    "structure": "desertspawner",
+    "structure": "ruin1",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 24617,
+    "spawnProbability": 1748,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
-    "spawnLocation": "Underground",
+    "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnXOffset": 0,
     "spawnZOffset": 0,
@@ -17,15 +17,18 @@
     ],
     "restrictionBlocks": [
       {
-        "value": "Blocks.STONE#0"
-      },
-      {
-        "value": "Blocks.DEEPSLATE"
+        "value": "Blocks.GRASS"
       }
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Undergrounddesert"
+        "value": "plains"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
