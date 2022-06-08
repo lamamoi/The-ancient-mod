@@ -27,10 +27,10 @@ import java.util.List;
 public class UndergrounddesertBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.619047619048f, 0.84761904762f),
 			Climate.Parameter.span(-1.114285714286f, -0.885714285714f), Climate.Parameter.span(0.395714285714f, 0.624285714286f),
-			Climate.Parameter.span(0.585714285714f, 0.814285714286f), Climate.Parameter.point(0),
+			Climate.Parameter.span(0.385714285714f, 0.614285714286f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-0.276570554213f, -0.047999125641f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(-0.1f, 1.5f),
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(-0.3f, 1.3f),
 			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.962284839927f, 0.637715160073f), 0);
 
 	public static Biome createBiome() {

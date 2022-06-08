@@ -28,10 +28,10 @@ import java.util.List;
 public class UndergroundmesaBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.885714285714f, 1.114285714286f),
 			Climate.Parameter.span(-0.114285714286f, 0.114285714286f), Climate.Parameter.span(0.395714285714f, 0.624285714286f),
-			Climate.Parameter.span(0.685714285714f, 0.914285714286f), Climate.Parameter.point(0),
+			Climate.Parameter.span(0.285714285714f, 0.514285714286f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-0.311160093285f, -0.082588664713f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(0f, 1.6f),
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.29f, 1.31f), Climate.Parameter.span(-0.4f, 1.2f),
 			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.996874378999f, 0.603125621001f), 0);
 
 	public static Biome createBiome() {
