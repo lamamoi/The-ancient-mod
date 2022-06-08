@@ -63,6 +63,134 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "redskeleton"
+    },
+    {
+      "name": "Sand1",
+      "type": "structure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_1"
+    },
+    {
+      "name": "Sand2",
+      "type": "structure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_2"
+    },
+    {
+      "name": "Sand3",
+      "type": "structure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_3"
+    },
+    {
+      "name": "Red1",
+      "type": "structure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_1"
+    },
+    {
+      "name": "Red2",
+      "type": "structure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_2"
+    },
+    {
+      "name": "Red3",
+      "type": "structure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_3"
+    },
+    {
+      "name": "Bone1",
+      "type": "structure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_1"
+    },
+    {
+      "name": "Bone2",
+      "type": "structure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_2"
+    },
+    {
+      "name": "Bone3",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_3"
+    },
+    {
+      "name": "Amongusbone",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amongusbone"
+    },
+    {
+      "name": "Sandrock1",
+      "type": "structure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandrock_1"
+    },
+    {
+      "name": "Sandrock2",
+      "type": "structure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandrock_2"
+    },
+    {
+      "name": "Sandrock3",
+      "type": "structure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sandrock_3"
+    },
+    {
+      "name": "Redrock1",
+      "type": "structure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redrock_1"
+    },
+    {
+      "name": "Redrock2",
+      "type": "structure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redrock_2"
+    },
+    {
+      "name": "Redrock3",
+      "type": "structure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redrock_3"
     }
   ],
   "variable_elements": [],
