@@ -287,6 +287,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mossystonecooked"
+    },
+    {
+      "name": "Undergrouddesertgen",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undergrouddesertgen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -303,7 +331,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "structure",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "the_ancient_mod",
