@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 4.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.MOSSY_COBBLESTONE"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Mossystone"
+    },
+    "name": "mossystonecooked",
+    "namespace": "mod"
+  }
+}

@@ -10,7 +10,7 @@ import net.mcreator.theancientmod.client.model.Modelcustom_model;
 
 public class DugkRenderer extends MobRenderer<DugkEntity, Modelcustom_model<DugkEntity>> {
 	public DugkRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.3f);
 	}
 
 	@Override

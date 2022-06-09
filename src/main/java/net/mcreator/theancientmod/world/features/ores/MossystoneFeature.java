@@ -44,9 +44,9 @@ public class MossystoneFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new MossystoneFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:mossystone", FEATURE,
-				new OreConfiguration(MossystoneFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MOSSYSTONE.get().defaultBlockState(), 27));
+				new OreConfiguration(MossystoneFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MOSSYSTONE.get().defaultBlockState(), 19));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:mossystone", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(30), InSquarePlacement.spread(),
+				List.of(CountPlacement.of(26), InSquarePlacement.spread(),
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
 		return FEATURE;
 	}

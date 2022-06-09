@@ -7,9 +7,9 @@
     "mobModelName": "Modelcustom_model",
     "mobModelTexture": "dugk.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelWidth": 0.30000000000000004,
+    "modelHeight": 0.4,
+    "modelShadowSize": 0.30000000000000004,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -44,7 +44,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Mob",
+    "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 0,
     "attackKnockback": 0.1,
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.FEATHER"
     },
     "livingSound": {
       "value": "entity.parrot.imitate.endermite"
