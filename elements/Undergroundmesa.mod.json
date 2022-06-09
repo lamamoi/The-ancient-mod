@@ -130,15 +130,6 @@
         "maxGroup": 1,
         "weight": 6,
         "spawnType": "monster"
-      },
-      {
-        "entity": {
-          "value": "CUSTOM:Redskeleton"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 15,
-        "spawnType": "monster"
       }
     ]
   }

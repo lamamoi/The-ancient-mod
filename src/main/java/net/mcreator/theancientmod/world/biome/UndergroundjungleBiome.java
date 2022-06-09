@@ -43,7 +43,7 @@ import java.util.List;
 
 public class UndergroundjungleBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.18f, 1.22f), Climate.Parameter.span(0.1f, 1.5f),
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.22f, 1.18f), Climate.Parameter.span(0.1f, 1.5f),
 			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.940343635153f, 0.459656364847f), 0);
 
 	public static Biome createBiome() {

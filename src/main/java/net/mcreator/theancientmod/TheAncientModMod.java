@@ -29,6 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.theancientmod.init.TheAncientModModItems;
 import net.mcreator.theancientmod.init.TheAncientModModFeatures;
 import net.mcreator.theancientmod.init.TheAncientModModEntities;
+import net.mcreator.theancientmod.init.TheAncientModModBlocks;
 import net.mcreator.theancientmod.init.TheAncientModModBiomes;
 
 import java.util.function.Supplier;
@@ -47,7 +48,7 @@ public class TheAncientModMod {
 	public TheAncientModMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		TheAncientModModBlocks.REGISTRY.register(bus);
 		TheAncientModModItems.REGISTRY.register(bus);
 		TheAncientModModEntities.REGISTRY.register(bus);
 

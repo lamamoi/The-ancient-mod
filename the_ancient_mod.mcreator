@@ -57,14 +57,6 @@
       "registry_name": "ruin_1"
     },
     {
-      "name": "Redskeleton",
-      "type": "livingentity",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redskeleton"
-    },
-    {
       "name": "Sand1",
       "type": "structure",
       "sortid": 7,
@@ -279,6 +271,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bush"
+    },
+    {
+      "name": "Mossystone",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mossystone"
     }
   ],
   "variable_elements": [],
@@ -287,11 +287,10 @@
     "en_us": {
       "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
       "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
+      "block.the_ancient_mod.mossystone": "Mossy Stone",
       "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
       "entity.the_ancient_mod.dugk": "Dugk",
-      "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg",
-      "item.the_ancient_mod.redskeleton_spawn_egg": "Red Skeleton Spawn Egg",
-      "entity.the_ancient_mod.redskeleton": "Red Skeleton"
+      "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
     }
   },
   "foldersRoot": {

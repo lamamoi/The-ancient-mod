@@ -49,7 +49,7 @@
     "biomeCategory": "JUNGLE",
     "rainingPossibility": 0.9,
     "temperature": 0.95,
-    "baseHeight": 0.2,
+    "baseHeight": -0.19999999999999998,
     "heightVariation": 0.2,
     "spawnBiome": false,
     "spawnBiomeNether": false,

@@ -44,5 +44,7 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
+		this.Dugk.yRot = netHeadYaw / (180F / (float) Math.PI);
+		this.Dugk.xRot = headPitch / (180F / (float) Math.PI);
 	}
 }

@@ -9,14 +9,12 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.mcreator.theancientmod.client.renderer.RedskeletonRenderer;
 import net.mcreator.theancientmod.client.renderer.DugkRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class TheAncientModModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(TheAncientModModEntities.REDSKELETON.get(), RedskeletonRenderer::new);
 		event.registerEntityRenderer(TheAncientModModEntities.DUGK.get(), DugkRenderer::new);
 	}
 }

@@ -41,7 +41,7 @@ public class DugkEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(TheAncientModModEntities.DUGK.get(), 3, 1, 2));
+			event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(TheAncientModModEntities.DUGK.get(), 1, 1, 2));
 	}
 
 	public DugkEntity(PlayMessages.SpawnEntity packet, Level world) {
