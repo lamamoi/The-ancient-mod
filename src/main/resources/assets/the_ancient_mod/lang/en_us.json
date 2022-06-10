@@ -1,8 +1,17 @@
 {
-  "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
-  "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
+  "item.the_ancient_mod.platinumpick": "Platinum Pickaxe",
   "block.the_ancient_mod.mossystone": "Mossy Stone",
+  "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
+  "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
+  "item.the_ancient_mod.platinumaxe": "Platinum Axe",
+  "block.the_ancient_mod.platinumblock": "Platinumblock",
+  "item.the_ancient_mod.platinumshovel": "Platinum Shovel",
+  "item.the_ancient_mod.platinumsword": "Platinum Sword",
+  "item.the_ancient_mod.rawplatinum": "Raw Platinum",
+  "block.the_ancient_mod.platinumore": "Platinum Ore",
+  "item.the_ancient_mod.platinumingot": "Platinum Ingot",
   "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
+  "item.the_ancient_mod.platinumhoe": "Platinum Hoe",
   "entity.the_ancient_mod.dugk": "Dugk",
   "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_ancient_mod:blocks/platinumblock",
+    "up": "the_ancient_mod:blocks/platinumblock",
+    "north": "the_ancient_mod:blocks/platinumblock",
+    "east": "the_ancient_mod:blocks/platinumblock",
+    "south": "the_ancient_mod:blocks/platinumblock",
+    "west": "the_ancient_mod:blocks/platinumblock",
+    "particle": "the_ancient_mod:blocks/platinumblock"
+  }
+}

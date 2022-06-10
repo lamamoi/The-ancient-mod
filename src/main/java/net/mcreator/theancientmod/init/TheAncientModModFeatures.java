@@ -17,6 +17,7 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.theancientmod.world.features.ores.PlatinumoreFeature;
 import net.mcreator.theancientmod.world.features.ores.MossystoneFeature;
 import net.mcreator.theancientmod.world.features.WitheredspawnerFeature;
 import net.mcreator.theancientmod.world.features.SilvernestFeature;
@@ -117,6 +118,8 @@ public class TheAncientModModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, BushFeature.GENERATE_BIOMES, BushFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MOSSYSTONE = register("mossystone", MossystoneFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MossystoneFeature.GENERATE_BIOMES, MossystoneFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PLATINUMORE = register("platinumore", PlatinumoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, PlatinumoreFeature.GENERATE_BIOMES, PlatinumoreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

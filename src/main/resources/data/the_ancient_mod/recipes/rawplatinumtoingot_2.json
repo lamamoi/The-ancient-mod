@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 11,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "the_ancient_mod:rawplatinum"
+  },
+  "result": "the_ancient_mod:platinumingot"
+}

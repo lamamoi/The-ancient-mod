@@ -1,0 +1,20 @@
+{
+  "_fv": 28,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 11.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Rawplatinum"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Platinumingot"
+    },
+    "name": "rawplatinumtoingot_2",
+    "namespace": "mod"
+  }
+}
