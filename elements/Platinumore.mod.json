@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "platinum",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -127,26 +127,19 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Undergroundjungle"
-      },
-      {
-        "value": "dripstone_caves"
-      },
-      {
-        "value": "lush_caves"
-      }
-    ],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.DEEPSLATE"
+      },
+      {
+        "value": "Blocks.TUFF"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 16,
+    "frequencyPerChunks": 19,
     "frequencyOnChunk": 2,
     "minGenerateHeight": -64,
-    "maxGenerateHeight": -32
+    "maxGenerateHeight": 0
   }
 }

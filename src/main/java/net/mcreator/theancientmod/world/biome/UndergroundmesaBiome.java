@@ -33,12 +33,13 @@ import net.mcreator.theancientmod.init.TheAncientModModBiomes;
 import java.util.List;
 
 public class UndergroundmesaBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.9f, 1.1f),
-			Climate.Parameter.span(-1.1f, -0.9f), Climate.Parameter.span(0.41f, 0.61f), Climate.Parameter.span(0.7f, 0.9f),
-			Climate.Parameter.point(0), Climate.Parameter.span(-0.296874378999f, -0.096874378999f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.928571428571f, 1.071428571429f),
+			Climate.Parameter.span(-1.071428571429f, -0.928571428571f), Climate.Parameter.span(0.438571428571f, 0.581428571429f),
+			Climate.Parameter.span(0.728571428571f, 0.871428571429f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.268302950428f, -0.12544580757f), 0);
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.19f, 1.21f), Climate.Parameter.span(0.1f, 1.5f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.896874378999f, 0.503125621001f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(0.01f, 1.01f), Climate.Parameter.span(0.3f, 1.3f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.696874378999f, 0.303125621001f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-1723304).waterFogColor(853914712)

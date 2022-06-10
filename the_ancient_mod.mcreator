@@ -25,28 +25,12 @@
       "registry_name": "desertspawner"
     },
     {
-      "name": "Desertspawnerloot",
-      "type": "loottable",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "desertspawnerloot"
-    },
-    {
       "name": "MesaSpawner",
       "type": "structure",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mesa_spawner"
-    },
-    {
-      "name": "Mesaspawnerloot",
-      "type": "loottable",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mesaspawnerloot"
     },
     {
       "name": "Ruin1",
@@ -463,37 +447,145 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "platinumingotwithblock"
+    },
+    {
+      "name": "Frozenstone",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenstone"
+    },
+    {
+      "name": "Frozencave",
+      "type": "biome",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozencave"
+    },
+    {
+      "name": "Frozenbrick",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenbrick"
+    },
+    {
+      "name": "Frozenchiseledbricks",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenchiseledbricks"
+    },
+    {
+      "name": "Frozencobblestone",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozencobblestone"
+    },
+    {
+      "name": "Frozenironore",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenironore"
+    },
+    {
+      "name": "Frozenstairs",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenstairs"
+    },
+    {
+      "name": "Frozenslab",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenslab"
+    },
+    {
+      "name": "Frozenwall",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenwall"
+    },
+    {
+      "name": "Frozenironfortune",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenironfortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.the_ancient_mod.platinumpick": "Platinum Pickaxe",
       "block.the_ancient_mod.mossystone": "Mossy Stone",
-      "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
-      "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
-      "item.the_ancient_mod.platinumaxe": "Platinum Axe",
-      "block.the_ancient_mod.platinumblock": "Platinumblock",
+      "block.the_ancient_mod.frozenstone": "Frozen Stone",
       "item.the_ancient_mod.platinumshovel": "Platinum Shovel",
-      "item.the_ancient_mod.platinumsword": "Platinum Sword",
-      "item.the_ancient_mod.rawplatinum": "Raw Platinum",
+      "block.the_ancient_mod.frozenchiseledbricks": "Frozenchiseledbricks",
+      "biome.the_ancient_mod.frozencave": "Frozencave",
+      "block.the_ancient_mod.frozenbrick": "Frozen Brick",
       "block.the_ancient_mod.platinumore": "Platinum Ore",
-      "item.the_ancient_mod.platinumingot": "Platinum Ingot",
-      "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
+      "block.the_ancient_mod.frozenwall": "Frozen Wall",
       "item.the_ancient_mod.platinumhoe": "Platinum Hoe",
       "entity.the_ancient_mod.dugk": "Dugk",
+      "block.the_ancient_mod.frozenstairs": "Frozenstairs",
+      "block.the_ancient_mod.frozenironore": "Frozen Iron Ore",
+      "item.the_ancient_mod.platinumpick": "Platinum Pickaxe",
+      "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
+      "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
+      "block.the_ancient_mod.platinumblock": "Platinum Block",
+      "item.the_ancient_mod.platinumaxe": "Platinum Axe",
+      "block.the_ancient_mod.frozenslab": "Frozen Slab",
+      "item.the_ancient_mod.platinumsword": "Platinum Sword",
+      "item.the_ancient_mod.rawplatinum": "Raw Platinum",
+      "block.the_ancient_mod.frozencobblestone": "Frozen Cobblestone",
+      "item.the_ancient_mod.platinumingot": "Platinum Ingot",
+      "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
       "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "structure",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "the_ancient_mod",

@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "the_ancient_mod:blocks/frozenbrick",
+    "particle": "the_ancient_mod:blocks/frozenbrick"
+  }
+}

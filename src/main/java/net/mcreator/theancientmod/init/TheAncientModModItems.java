@@ -37,6 +37,15 @@ public class TheAncientModModItems {
 	public static final RegistryObject<Item> PLATINUMSHOVEL = REGISTRY.register("platinumshovel", () -> new PlatinumshovelItem());
 	public static final RegistryObject<Item> PLATINUMHOE = REGISTRY.register("platinumhoe", () -> new PlatinumhoeItem());
 	public static final RegistryObject<Item> PLATINUMBLOCK = block(TheAncientModModBlocks.PLATINUMBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENSTONE = block(TheAncientModModBlocks.FROZENSTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENBRICK = block(TheAncientModModBlocks.FROZENBRICK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENCHISELEDBRICKS = block(TheAncientModModBlocks.FROZENCHISELEDBRICKS,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENCOBBLESTONE = block(TheAncientModModBlocks.FROZENCOBBLESTONE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENIRONORE = block(TheAncientModModBlocks.FROZENIRONORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENSTAIRS = block(TheAncientModModBlocks.FROZENSTAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENSLAB = block(TheAncientModModBlocks.FROZENSLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FROZENWALL = block(TheAncientModModBlocks.FROZENWALL, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -46,8 +46,8 @@ public class PlatinumoreFeature extends OreFeature {
 		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:platinumore", FEATURE,
 				new OreConfiguration(PlatinumoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.PLATINUMORE.get().defaultBlockState(), 2));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:platinumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(16), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(19), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,8 +55,7 @@ public class PlatinumoreFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("dripstone_caves"),
-			new ResourceLocation("the_ancient_mod:undergroundjungle"), new ResourceLocation("lush_caves"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public PlatinumoreFeature() {
@@ -85,7 +84,7 @@ public class PlatinumoreFeature extends OreFeature {
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.DEEPSLATE);
+				base_blocks = List.of(Blocks.DEEPSLATE, Blocks.TUFF);
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

@@ -22,7 +22,7 @@ public class PlatinumswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4.7f;
+				return 3.199999999999999f;
 			}
 
 			public int getLevel() {
@@ -36,6 +36,6 @@ public class PlatinumswordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(TheAncientModModItems.PLATINUMINGOT.get()));
 			}
-		}, 3, -1.8f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 3, -2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 	}
 }

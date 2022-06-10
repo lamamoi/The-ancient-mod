@@ -3,6 +3,14 @@
   "values": [
     "the_ancient_mod:mossystone",
     "the_ancient_mod:platinumore",
-    "the_ancient_mod:platinumblock"
+    "the_ancient_mod:platinumblock",
+    "the_ancient_mod:frozenstone",
+    "the_ancient_mod:frozenbrick",
+    "the_ancient_mod:frozenchiseledbricks",
+    "the_ancient_mod:frozencobblestone",
+    "the_ancient_mod:frozenironore",
+    "the_ancient_mod:frozenstairs",
+    "the_ancient_mod:frozenslab",
+    "the_ancient_mod:frozenwall"
   ]
 }

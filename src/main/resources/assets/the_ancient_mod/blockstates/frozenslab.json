@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "the_ancient_mod:block/frozenslab"
+    },
+    "type=top": {
+      "model": "the_ancient_mod:block/frozenslab_top"
+    },
+    "type=double": {
+      "model": "the_ancient_mod:block/frozenslab_full"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "the_ancient_mod:blocks/frozenbrick",
+    "bottom": "the_ancient_mod:blocks/frozenbrick",
+    "top": "the_ancient_mod:blocks/frozenbrick",
+    "side": "the_ancient_mod:blocks/frozenbrick"
+  }
+}

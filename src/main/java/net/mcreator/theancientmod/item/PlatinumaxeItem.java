@@ -22,7 +22,7 @@ public class PlatinumaxeItem extends AxeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 5.8f;
+				return 6.4f;
 			}
 
 			public int getLevel() {

@@ -7,6 +7,6 @@
     "east": "the_ancient_mod:blocks/platinum",
     "south": "the_ancient_mod:blocks/platinum",
     "west": "the_ancient_mod:blocks/platinum",
-    "particle": "the_ancient_mod:blocks/platinumtop"
+    "particle": "the_ancient_mod:blocks/platinum"
   }
 }

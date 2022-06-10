@@ -54,7 +54,7 @@
     "spawnBiome": true,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 7,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [
       "SANDY"
     ],
@@ -137,6 +137,15 @@
         "maxGroup": 1,
         "weight": 9,
         "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCod"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 4,
+        "spawnType": "undergroundWaterCreature"
       }
     ]
   }

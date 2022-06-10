@@ -54,7 +54,7 @@
     "spawnBiome": false,
     "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 7,
+    "biomeWeight": 5,
     "biomeDictionaryTypes": [
       "JUNGLE"
     ],

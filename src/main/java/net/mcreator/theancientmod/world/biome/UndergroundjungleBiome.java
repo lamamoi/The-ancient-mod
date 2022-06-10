@@ -43,8 +43,8 @@ import java.util.List;
 
 public class UndergroundjungleBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT_UNDERGROUND = new Climate.ParameterPoint(Climate.Parameter.span(-1, 1),
-			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.22f, 1.18f), Climate.Parameter.span(0.1f, 1.5f),
-			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.940343635153f, 0.459656364847f), 0);
+			Climate.Parameter.span(-1, 1), Climate.Parameter.span(-0.02f, 0.98f), Climate.Parameter.span(0.3f, 1.3f),
+			Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-0.740343635153f, 0.259656364847f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-15747916).waterFogColor(-16084591)

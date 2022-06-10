@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_ancient_mod:blocks/frozencobblestone",
+    "up": "the_ancient_mod:blocks/frozencobblestone",
+    "north": "the_ancient_mod:blocks/frozencobblestone",
+    "east": "the_ancient_mod:blocks/frozencobblestone",
+    "south": "the_ancient_mod:blocks/frozencobblestone",
+    "west": "the_ancient_mod:blocks/frozencobblestone",
+    "particle": "the_ancient_mod:blocks/frozencobblestone"
+  }
+}
