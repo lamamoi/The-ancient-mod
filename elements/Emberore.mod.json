@@ -134,12 +134,12 @@
     ],
     "blocksToReplace": [
       {
-        "value": "Blocks.SANDSTONE#0"
+        "value": "Blocks.SMOOTH_SANDSTONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 4,
-    "frequencyOnChunk": 4,
+    "frequencyPerChunks": 11,
+    "frequencyOnChunk": 5,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

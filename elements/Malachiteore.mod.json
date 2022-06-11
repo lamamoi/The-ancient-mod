@@ -124,7 +124,9 @@
     "onDestroyedByPlayer": {
       "name": "Malachitefortune"
     },
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Undergroundjungle"
@@ -137,7 +139,7 @@
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 12,
-    "frequencyOnChunk": 4,
+    "frequencyOnChunk": 5,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 48
   }

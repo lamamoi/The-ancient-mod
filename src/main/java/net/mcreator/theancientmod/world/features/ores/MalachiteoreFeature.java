@@ -36,18 +36,18 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
-public class EmberoreFeature extends OreFeature {
-	public static EmberoreFeature FEATURE = null;
+public class MalachiteoreFeature extends OreFeature {
+	public static MalachiteoreFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new EmberoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:emberore", FEATURE,
-				new OreConfiguration(EmberoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.EMBERORE.get().defaultBlockState(), 5));
-		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:emberore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(11), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+		FEATURE = new MalachiteoreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:malachiteore", FEATURE,
+				new OreConfiguration(MalachiteoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MALACHITEORE.get().defaultBlockState(), 5));
+		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:malachiteore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(12), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(48)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,10 +55,10 @@ public class EmberoreFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergrounddesert"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergroundjungle"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
-	public EmberoreFeature() {
+	public MalachiteoreFeature() {
 		super(OreConfiguration.CODEC);
 	}
 
@@ -70,21 +70,21 @@ public class EmberoreFeature extends OreFeature {
 	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	private static class EmberoreFeatureRuleTest extends RuleTest {
-		static final EmberoreFeatureRuleTest INSTANCE = new EmberoreFeatureRuleTest();
-		private static final com.mojang.serialization.Codec<EmberoreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		private static final RuleTestType<EmberoreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+	private static class MalachiteoreFeatureRuleTest extends RuleTest {
+		static final MalachiteoreFeatureRuleTest INSTANCE = new MalachiteoreFeatureRuleTest();
+		private static final com.mojang.serialization.Codec<MalachiteoreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		private static final RuleTestType<MalachiteoreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("the_ancient_mod:emberore_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("the_ancient_mod:malachiteore_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.SMOOTH_SANDSTONE);
+				base_blocks = List.of(Blocks.STONE);
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}
