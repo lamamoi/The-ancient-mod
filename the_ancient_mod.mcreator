@@ -521,36 +521,50 @@
       "registry_name": "frozenwall"
     },
     {
-      "name": "Frozenironfortune",
-      "type": "procedure",
+      "name": "PlatinumarmorArmor",
+      "type": "armor",
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenironfortune",
+      "registry_name": "platinumarmor_armor",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
       }
+    },
+    {
+      "name": "PlatinumarmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platinumarmor_armor_helmet_recipe"
+    },
+    {
+      "name": "PlatinumarmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platinumarmor_armor_body_recipe"
+    },
+    {
+      "name": "PlatinumarmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platinumarmor_armor_leggings_recipe"
+    },
+    {
+      "name": "PlatinumarmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platinumarmor_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -570,15 +584,19 @@
       "block.the_ancient_mod.frozenstairs": "Frozenstairs",
       "block.the_ancient_mod.frozenironore": "Frozen Iron Ore",
       "item.the_ancient_mod.platinumpick": "Platinum Pickaxe",
+      "item.the_ancient_mod.platinumarmor_armor_leggings": "Platinum Leggings",
       "biome.the_ancient_mod.undergroundjungle": "Undergroundjungle",
       "biome.the_ancient_mod.undergroundmesa": "Undergroundmesa",
+      "item.the_ancient_mod.platinumarmor_armor_chestplate": "Platinum Chestplate",
       "block.the_ancient_mod.platinumblock": "Platinum Block",
       "item.the_ancient_mod.platinumaxe": "Platinum Axe",
       "block.the_ancient_mod.frozenslab": "Frozen Slab",
       "item.the_ancient_mod.platinumsword": "Platinum Sword",
+      "item.the_ancient_mod.platinumarmor_armor_boots": "Platinum Boots",
       "item.the_ancient_mod.rawplatinum": "Raw Platinum",
       "block.the_ancient_mod.frozencobblestone": "Frozen Cobblestone",
       "item.the_ancient_mod.platinumingot": "Platinum Ingot",
+      "item.the_ancient_mod.platinumarmor_armor_helmet": "Platinum Helmet",
       "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
       "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
     }

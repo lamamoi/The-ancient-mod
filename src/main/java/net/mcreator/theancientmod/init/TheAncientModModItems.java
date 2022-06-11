@@ -21,6 +21,7 @@ import net.mcreator.theancientmod.item.PlatinumpickItem;
 import net.mcreator.theancientmod.item.PlatinumingotItem;
 import net.mcreator.theancientmod.item.PlatinumhoeItem;
 import net.mcreator.theancientmod.item.PlatinumaxeItem;
+import net.mcreator.theancientmod.item.PlatinumarmorArmorItem;
 import net.mcreator.theancientmod.TheAncientModMod;
 
 public class TheAncientModModItems {
@@ -46,6 +47,14 @@ public class TheAncientModModItems {
 	public static final RegistryObject<Item> FROZENSTAIRS = block(TheAncientModModBlocks.FROZENSTAIRS, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> FROZENSLAB = block(TheAncientModModBlocks.FROZENSLAB, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> FROZENWALL = block(TheAncientModModBlocks.FROZENWALL, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> PLATINUMARMOR_ARMOR_HELMET = REGISTRY.register("platinumarmor_armor_helmet",
+			() -> new PlatinumarmorArmorItem.Helmet());
+	public static final RegistryObject<Item> PLATINUMARMOR_ARMOR_CHESTPLATE = REGISTRY.register("platinumarmor_armor_chestplate",
+			() -> new PlatinumarmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> PLATINUMARMOR_ARMOR_LEGGINGS = REGISTRY.register("platinumarmor_armor_leggings",
+			() -> new PlatinumarmorArmorItem.Leggings());
+	public static final RegistryObject<Item> PLATINUMARMOR_ARMOR_BOOTS = REGISTRY.register("platinumarmor_armor_boots",
+			() -> new PlatinumarmorArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

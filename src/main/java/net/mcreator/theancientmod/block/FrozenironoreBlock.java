@@ -39,6 +39,6 @@ public class FrozenironoreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.IRON_NUGGET, 5));
+		return Collections.singletonList(new ItemStack(Items.IRON_NUGGET, 3));
 	}
 }

@@ -4,7 +4,7 @@
   "definition": {
     "name": "Frozencave",
     "groundBlock": {
-      "value": "Blocks.SNOW"
+      "value": "CUSTOM:Frozenstone"
     },
     "undergroundBlock": {
       "value": "CUSTOM:Frozenstone"

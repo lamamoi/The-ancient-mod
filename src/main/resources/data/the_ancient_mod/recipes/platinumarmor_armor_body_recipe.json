@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "2": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "3": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "4": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "5": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "6": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "7": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "8": {
+      "item": "the_ancient_mod:platinumingot"
+    }
+  },
+  "result": {
+    "item": "the_ancient_mod:platinumarmor_armor_chestplate",
+    "count": 1
+  }
+}

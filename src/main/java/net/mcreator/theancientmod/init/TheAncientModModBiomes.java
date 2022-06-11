@@ -113,8 +113,8 @@ public class TheAncientModModBiomes {
 									Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.MOSS_BLOCK.defaultBlockState()));
 							surfaceRules.add(1,
 									anySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, FROZENCAVE.getId()),
-											Blocks.SNOW_BLOCK.defaultBlockState(), TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(),
-											Blocks.PACKED_ICE.defaultBlockState()));
+											TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(),
+											TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(), Blocks.PACKED_ICE.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, UNDERGROUNDDESERT.getId()),
 											Blocks.SAND.defaultBlockState(), Blocks.SANDSTONE.defaultBlockState(),
@@ -125,8 +125,8 @@ public class TheAncientModModBiomes {
 											Blocks.SMOOTH_RED_SANDSTONE.defaultBlockState()));
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, FROZENCAVE.getId()),
-											Blocks.SNOW_BLOCK.defaultBlockState(), TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(),
-											Blocks.PACKED_ICE.defaultBlockState()));
+											TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(),
+											TheAncientModModBlocks.FROZENSTONE.get().defaultBlockState(), Blocks.PACKED_ICE.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 									noiseGeneratorSettings.noiseRouter(),

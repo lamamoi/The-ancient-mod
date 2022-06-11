@@ -45,7 +45,7 @@
     "customDrop": {
       "value": "Items.IRON_NUGGET"
     },
-    "dropAmount": 5,
+    "dropAmount": 3,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -135,8 +135,8 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 14,
+    "frequencyOnChunk": 18,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

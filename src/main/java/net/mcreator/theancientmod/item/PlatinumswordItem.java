@@ -22,7 +22,7 @@ public class PlatinumswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 3.199999999999999f;
+				return 2.800000000000001f;
 			}
 
 			public int getLevel() {

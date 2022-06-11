@@ -1,0 +1,62 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "platinumhelm",
+    "enableBody": true,
+    "textureBody": "platinumchest",
+    "enableLeggings": true,
+    "textureLeggings": "platinumlegs",
+    "enableBoots": true,
+    "textureBoots": "platinumboots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "iron_",
+    "helmetName": "Platinum Helmet",
+    "bodyName": "Platinum Chestplate",
+    "leggingsName": "Platinum Leggings",
+    "bootsName": "Platinum Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "iron__layer_1.png",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "iron__layer_1.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "iron__layer_2.png",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "iron__layer_1.png",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 32,
+    "damageValueHelmet": 4,
+    "damageValueBody": 7,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 11,
+    "toughness": 1.7000000000000002,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_gold"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Platinumingot"
+      }
+    ]
+  }
+}

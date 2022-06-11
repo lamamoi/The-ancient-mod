@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "2": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "3": {
+      "item": "the_ancient_mod:platinumingot"
+    },
+    "5": {
+      "item": "the_ancient_mod:platinumingot"
+    }
+  },
+  "result": {
+    "item": "the_ancient_mod:platinumarmor_armor_boots",
+    "count": 1
+  }
+}

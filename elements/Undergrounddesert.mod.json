@@ -113,15 +113,6 @@
     "spawnEntries": [
       {
         "entity": {
-          "value": "EntityHusk"
-        },
-        "minGroup": 1,
-        "maxGroup": 2,
-        "weight": 16,
-        "spawnType": "monster"
-      },
-      {
-        "entity": {
           "value": "EntityCreeper"
         },
         "minGroup": 1,
