@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rawplatinum",
+    "texture": "ember",
     "customModelName": "Normal",
-    "name": "Raw Platinum",
+    "name": "Amber",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MATERIALS"

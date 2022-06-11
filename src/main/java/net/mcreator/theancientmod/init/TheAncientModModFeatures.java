@@ -20,6 +20,7 @@ import net.minecraft.core.Holder;
 import net.mcreator.theancientmod.world.features.ores.PlatinumoreFeature;
 import net.mcreator.theancientmod.world.features.ores.MossystoneFeature;
 import net.mcreator.theancientmod.world.features.ores.FrozenironoreFeature;
+import net.mcreator.theancientmod.world.features.ores.EmberoreFeature;
 import net.mcreator.theancientmod.world.features.WitheredspawnerFeature;
 import net.mcreator.theancientmod.world.features.SilvernestFeature;
 import net.mcreator.theancientmod.world.features.Sandrock3Feature;
@@ -123,6 +124,8 @@ public class TheAncientModModFeatures {
 			GenerationStep.Decoration.UNDERGROUND_ORES, PlatinumoreFeature.GENERATE_BIOMES, PlatinumoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> FROZENIRONORE = register("frozenironore", FrozenironoreFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, FrozenironoreFeature.GENERATE_BIOMES, FrozenironoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> EMBERORE = register("emberore", EmberoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, EmberoreFeature.GENERATE_BIOMES, EmberoreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

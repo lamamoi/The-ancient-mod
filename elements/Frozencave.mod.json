@@ -46,7 +46,7 @@
       "value": "SNOWFLAKE"
     },
     "particlesProbability": 0.1,
-    "biomeCategory": "ICY",
+    "biomeCategory": "UNDERGROUND",
     "rainingPossibility": 0.7,
     "temperature": -0.5,
     "baseHeight": -0.30000000000000004,

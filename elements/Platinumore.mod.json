@@ -17,7 +17,7 @@
     "particleTexture": "platinum",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -50,7 +50,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "ROCK"
     },
@@ -131,15 +131,12 @@
     "blocksToReplace": [
       {
         "value": "Blocks.DEEPSLATE"
-      },
-      {
-        "value": "Blocks.TUFF"
       }
     ],
-    "generationShape": "UNIFORM",
-    "frequencyPerChunks": 19,
-    "frequencyOnChunk": 2,
+    "generationShape": "TRIANGLE",
+    "frequencyPerChunks": 7,
+    "frequencyOnChunk": 3,
     "minGenerateHeight": -64,
-    "maxGenerateHeight": 0
+    "maxGenerateHeight": -32
   }
 }

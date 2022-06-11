@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_ancient_mod:blocks/malachiteore",
+    "up": "the_ancient_mod:blocks/malachiteore",
+    "north": "the_ancient_mod:blocks/malachiteore",
+    "east": "the_ancient_mod:blocks/malachiteore",
+    "south": "the_ancient_mod:blocks/malachiteore",
+    "west": "the_ancient_mod:blocks/malachiteore",
+    "particle": "the_ancient_mod:blocks/malachiteore"
+  }
+}

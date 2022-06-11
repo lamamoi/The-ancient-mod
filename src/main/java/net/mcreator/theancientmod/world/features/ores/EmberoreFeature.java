@@ -36,18 +36,18 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
-public class PlatinumoreFeature extends OreFeature {
-	public static PlatinumoreFeature FEATURE = null;
+public class EmberoreFeature extends OreFeature {
+	public static EmberoreFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new PlatinumoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:platinumore", FEATURE,
-				new OreConfiguration(PlatinumoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.PLATINUMORE.get().defaultBlockState(), 3));
-		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:platinumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(7), InSquarePlacement.spread(),
-						HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32)), BiomeFilter.biome()));
+		FEATURE = new EmberoreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:emberore", FEATURE,
+				new OreConfiguration(EmberoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.EMBERORE.get().defaultBlockState(), 4));
+		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:emberore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
+						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,10 +55,10 @@ public class PlatinumoreFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("the_ancient_mod:undergrounddesert"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
-	public PlatinumoreFeature() {
+	public EmberoreFeature() {
 		super(OreConfiguration.CODEC);
 	}
 
@@ -70,21 +70,21 @@ public class PlatinumoreFeature extends OreFeature {
 	}
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	private static class PlatinumoreFeatureRuleTest extends RuleTest {
-		static final PlatinumoreFeatureRuleTest INSTANCE = new PlatinumoreFeatureRuleTest();
-		private static final com.mojang.serialization.Codec<PlatinumoreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		private static final RuleTestType<PlatinumoreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
+	private static class EmberoreFeatureRuleTest extends RuleTest {
+		static final EmberoreFeatureRuleTest INSTANCE = new EmberoreFeatureRuleTest();
+		private static final com.mojang.serialization.Codec<EmberoreFeatureRuleTest> CODEC = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		private static final RuleTestType<EmberoreFeatureRuleTest> CUSTOM_MATCH = () -> CODEC;
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("the_ancient_mod:platinumore_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("the_ancient_mod:emberore_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;
 
 		public boolean test(BlockState blockAt, Random random) {
 			if (base_blocks == null) {
-				base_blocks = List.of(Blocks.DEEPSLATE);
+				base_blocks = List.of(Blocks.SANDSTONE);
 			}
 			return base_blocks.contains(blockAt.getBlock());
 		}

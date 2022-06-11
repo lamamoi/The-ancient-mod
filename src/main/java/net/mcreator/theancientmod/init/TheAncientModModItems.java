@@ -22,6 +22,8 @@ import net.mcreator.theancientmod.item.PlatinumingotItem;
 import net.mcreator.theancientmod.item.PlatinumhoeItem;
 import net.mcreator.theancientmod.item.PlatinumaxeItem;
 import net.mcreator.theancientmod.item.PlatinumarmorArmorItem;
+import net.mcreator.theancientmod.item.MalachiteItem;
+import net.mcreator.theancientmod.item.EmberItem;
 import net.mcreator.theancientmod.TheAncientModMod;
 
 public class TheAncientModModItems {
@@ -55,6 +57,10 @@ public class TheAncientModModItems {
 			() -> new PlatinumarmorArmorItem.Leggings());
 	public static final RegistryObject<Item> PLATINUMARMOR_ARMOR_BOOTS = REGISTRY.register("platinumarmor_armor_boots",
 			() -> new PlatinumarmorArmorItem.Boots());
+	public static final RegistryObject<Item> EMBER = REGISTRY.register("ember", () -> new EmberItem());
+	public static final RegistryObject<Item> EMBERORE = block(TheAncientModModBlocks.EMBERORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> MALACHITE = REGISTRY.register("malachite", () -> new MalachiteItem());
+	public static final RegistryObject<Item> MALACHITEORE = block(TheAncientModModBlocks.MALACHITEORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

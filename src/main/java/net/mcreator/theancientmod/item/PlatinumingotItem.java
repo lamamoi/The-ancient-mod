@@ -9,7 +9,7 @@ import net.minecraft.world.item.CreativeModeTab;
 
 public class PlatinumingotItem extends Item {
 	public PlatinumingotItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS).stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

@@ -565,6 +565,134 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "platinumarmor_armor_boots_recipe"
+    },
+    {
+      "name": "Ember",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ember"
+    },
+    {
+      "name": "Emberore",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emberore"
+    },
+    {
+      "name": "Malachite",
+      "type": "item",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "malachite"
+    },
+    {
+      "name": "Malachiteore",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "malachiteore"
+    },
+    {
+      "name": "Frozenironfortune",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozenironfortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Amberfortune",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amberfortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Malachitefortune",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "malachitefortune",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -579,9 +707,12 @@
       "block.the_ancient_mod.frozenbrick": "Frozen Brick",
       "block.the_ancient_mod.platinumore": "Platinum Ore",
       "block.the_ancient_mod.frozenwall": "Frozen Wall",
+      "item.the_ancient_mod.malachite": "Malachite",
       "item.the_ancient_mod.platinumhoe": "Platinum Hoe",
       "entity.the_ancient_mod.dugk": "Dugk",
+      "block.the_ancient_mod.malachiteore": "Malachite Ore",
       "block.the_ancient_mod.frozenstairs": "Frozenstairs",
+      "block.the_ancient_mod.emberore": "Amber Ore",
       "block.the_ancient_mod.frozenironore": "Frozen Iron Ore",
       "item.the_ancient_mod.platinumpick": "Platinum Pickaxe",
       "item.the_ancient_mod.platinumarmor_armor_leggings": "Platinum Leggings",
@@ -590,6 +721,7 @@
       "item.the_ancient_mod.platinumarmor_armor_chestplate": "Platinum Chestplate",
       "block.the_ancient_mod.platinumblock": "Platinum Block",
       "item.the_ancient_mod.platinumaxe": "Platinum Axe",
+      "item.the_ancient_mod.ember": "Amber",
       "block.the_ancient_mod.frozenslab": "Frozen Slab",
       "item.the_ancient_mod.platinumsword": "Platinum Sword",
       "item.the_ancient_mod.platinumarmor_armor_boots": "Platinum Boots",

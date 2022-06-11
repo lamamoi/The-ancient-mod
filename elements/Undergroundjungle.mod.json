@@ -46,7 +46,7 @@
       "value": "SPORE_BLOSSOM_AIR"
     },
     "particlesProbability": 0.1,
-    "biomeCategory": "JUNGLE",
+    "biomeCategory": "UNDERGROUND",
     "rainingPossibility": 0.9,
     "temperature": 0.95,
     "baseHeight": -0.19999999999999998,

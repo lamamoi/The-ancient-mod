@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.theancientmod.block.PlatinumoreBlock;
 import net.mcreator.theancientmod.block.PlatinumblockBlock;
 import net.mcreator.theancientmod.block.MossystoneBlock;
+import net.mcreator.theancientmod.block.MalachiteoreBlock;
 import net.mcreator.theancientmod.block.FrozenwallBlock;
 import net.mcreator.theancientmod.block.FrozenstoneBlock;
 import net.mcreator.theancientmod.block.FrozenstairsBlock;
@@ -25,6 +26,7 @@ import net.mcreator.theancientmod.block.FrozenironoreBlock;
 import net.mcreator.theancientmod.block.FrozencobblestoneBlock;
 import net.mcreator.theancientmod.block.FrozenchiseledbricksBlock;
 import net.mcreator.theancientmod.block.FrozenbrickBlock;
+import net.mcreator.theancientmod.block.EmberoreBlock;
 import net.mcreator.theancientmod.TheAncientModMod;
 
 public class TheAncientModModBlocks {
@@ -40,11 +42,14 @@ public class TheAncientModModBlocks {
 	public static final RegistryObject<Block> FROZENSTAIRS = REGISTRY.register("frozenstairs", () -> new FrozenstairsBlock());
 	public static final RegistryObject<Block> FROZENSLAB = REGISTRY.register("frozenslab", () -> new FrozenslabBlock());
 	public static final RegistryObject<Block> FROZENWALL = REGISTRY.register("frozenwall", () -> new FrozenwallBlock());
+	public static final RegistryObject<Block> EMBERORE = REGISTRY.register("emberore", () -> new EmberoreBlock());
+	public static final RegistryObject<Block> MALACHITEORE = REGISTRY.register("malachiteore", () -> new MalachiteoreBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
+			PlatinumoreBlock.registerRenderLayer();
 			FrozenwallBlock.registerRenderLayer();
 		}
 	}

@@ -2,19 +2,19 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "frozeniron",
-    "textureTop": "frozeniron",
-    "textureLeft": "frozeniron",
-    "textureFront": "frozeniron",
-    "textureRight": "frozeniron",
-    "textureBack": "frozeniron",
+    "texture": "malachiteore",
+    "textureTop": "malachiteore",
+    "textureLeft": "malachiteore",
+    "textureFront": "malachiteore",
+    "textureRight": "malachiteore",
+    "textureBack": "malachiteore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "frozeniron",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,10 +32,10 @@
         "subtract": false
       }
     ],
-    "name": "Frozen Iron Ore",
+    "name": "Malachite Ore",
     "specialInfo": [],
-    "hardness": 1.7,
-    "resistance": 4.0,
+    "hardness": 1.5,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -43,9 +43,9 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "Items.IRON_NUGGET"
+      "value": "CUSTOM:Malachite"
     },
-    "dropAmount": 3,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -70,33 +70,33 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.7,
+    "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
-      "value": "BASALT"
+      "value": "GROUND"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.amethyst_block.hit"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.dripstone_block.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.dripstone_block.hit"
     },
     "placeSound": {
-      "value": ""
+      "value": "block.gilded_blackstone.place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.gilded_blackstone.step"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -122,25 +122,23 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
-      "name": "Frozenironfortune"
+      "name": "Malachitefortune"
     },
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Frozencave"
+        "value": "CUSTOM:Undergroundjungle"
       }
     ],
     "blocksToReplace": [
       {
-        "value": "CUSTOM:Frozenstone"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 14,
-    "frequencyOnChunk": 18,
+    "frequencyPerChunks": 12,
+    "frequencyOnChunk": 4,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 48
   }
 }
