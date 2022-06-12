@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "the_ancient_mod:items/copperaxe"
+  }
+}

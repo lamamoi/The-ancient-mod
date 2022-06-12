@@ -117,15 +117,6 @@
         "maxGroup": 1,
         "weight": 2,
         "spawnType": "undergroundWaterCreature"
-      },
-      {
-        "entity": {
-          "value": "EntityStray"
-        },
-        "minGroup": 1,
-        "maxGroup": 1,
-        "weight": 6,
-        "spawnType": "monster"
       }
     ]
   }

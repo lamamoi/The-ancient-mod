@@ -2,6 +2,7 @@
   "block.the_ancient_mod.mossystone": "Mossy Stone",
   "block.the_ancient_mod.frozenstone": "Frozen Stone",
   "item.the_ancient_mod.platinumshovel": "Platinum Shovel",
+  "item.the_ancient_mod.copper_hoe": "Copper Hoe",
   "block.the_ancient_mod.frozenchiseledbricks": "Frozenchiseledbricks",
   "biome.the_ancient_mod.frozencave": "Frozencave",
   "block.the_ancient_mod.frozenbrick": "Frozen Brick",
@@ -33,6 +34,10 @@
   "item.the_ancient_mod.platinumarmor_armor_helmet": "Platinum Helmet",
   "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
   "item.the_ancient_mod.copperarmor_armor_boots": "Copper Boots",
+  "item.the_ancient_mod.copper_pickaxe": "Copper Pickaxe",
+  "item.the_ancient_mod.copper_axe": "Copper Axe",
   "item.the_ancient_mod.copperarmor_armor_leggings": "Copper Leggings",
-  "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
+  "item.the_ancient_mod.copper_shovel": "Copper Shovel",
+  "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg",
+  "item.the_ancient_mod.copper_sword": "Copper Sword"
 }

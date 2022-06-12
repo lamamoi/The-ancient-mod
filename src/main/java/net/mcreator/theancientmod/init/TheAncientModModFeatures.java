@@ -61,6 +61,16 @@ import java.util.ArrayList;
 public class TheAncientModModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, TheAncientModMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
+	public static final RegistryObject<Feature<?>> MOSSYSTONE = register("mossystone", MossystoneFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MossystoneFeature.GENERATE_BIOMES, MossystoneFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PLATINUMORE = register("platinumore", PlatinumoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, PlatinumoreFeature.GENERATE_BIOMES, PlatinumoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> FROZENIRONORE = register("frozenironore", FrozenironoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, FrozenironoreFeature.GENERATE_BIOMES, FrozenironoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> EMBERORE = register("emberore", EmberoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, EmberoreFeature.GENERATE_BIOMES, EmberoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MALACHITEORE = register("malachiteore", MalachiteoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, MalachiteoreFeature.GENERATE_BIOMES, MalachiteoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> DESERTSPAWNER = register("desertspawner", DesertspawnerFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_STRUCTURES, DesertspawnerFeature.GENERATE_BIOMES, DesertspawnerFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MESA_SPAWNER = register("mesa_spawner", MesaSpawnerFeature::feature, new FeatureRegistration(
@@ -119,16 +129,6 @@ public class TheAncientModModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, Rock3Feature.GENERATE_BIOMES, Rock3Feature::placedFeature));
 	public static final RegistryObject<Feature<?>> BUSH = register("bush", BushFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, BushFeature.GENERATE_BIOMES, BushFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MOSSYSTONE = register("mossystone", MossystoneFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MossystoneFeature.GENERATE_BIOMES, MossystoneFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> PLATINUMORE = register("platinumore", PlatinumoreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, PlatinumoreFeature.GENERATE_BIOMES, PlatinumoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> FROZENIRONORE = register("frozenironore", FrozenironoreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, FrozenironoreFeature.GENERATE_BIOMES, FrozenironoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> EMBERORE = register("emberore", EmberoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, EmberoreFeature.GENERATE_BIOMES, EmberoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MALACHITEORE = register("malachiteore", MalachiteoreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, MalachiteoreFeature.GENERATE_BIOMES, MalachiteoreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

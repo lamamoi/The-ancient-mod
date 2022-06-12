@@ -36,6 +36,6 @@ public class PlatinumaxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(TheAncientModModItems.PLATINUMINGOT.get()));
 			}
-		}, 1, -2.7f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, -2.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }

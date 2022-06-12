@@ -35,13 +35,13 @@ public class TheAncientModModBlocks {
 	public static final RegistryObject<Block> PLATINUMORE = REGISTRY.register("platinumore", () -> new PlatinumoreBlock());
 	public static final RegistryObject<Block> PLATINUMBLOCK = REGISTRY.register("platinumblock", () -> new PlatinumblockBlock());
 	public static final RegistryObject<Block> FROZENSTONE = REGISTRY.register("frozenstone", () -> new FrozenstoneBlock());
+	public static final RegistryObject<Block> FROZENCOBBLESTONE = REGISTRY.register("frozencobblestone", () -> new FrozencobblestoneBlock());
 	public static final RegistryObject<Block> FROZENBRICK = REGISTRY.register("frozenbrick", () -> new FrozenbrickBlock());
 	public static final RegistryObject<Block> FROZENCHISELEDBRICKS = REGISTRY.register("frozenchiseledbricks", () -> new FrozenchiseledbricksBlock());
-	public static final RegistryObject<Block> FROZENCOBBLESTONE = REGISTRY.register("frozencobblestone", () -> new FrozencobblestoneBlock());
-	public static final RegistryObject<Block> FROZENIRONORE = REGISTRY.register("frozenironore", () -> new FrozenironoreBlock());
 	public static final RegistryObject<Block> FROZENSTAIRS = REGISTRY.register("frozenstairs", () -> new FrozenstairsBlock());
 	public static final RegistryObject<Block> FROZENSLAB = REGISTRY.register("frozenslab", () -> new FrozenslabBlock());
 	public static final RegistryObject<Block> FROZENWALL = REGISTRY.register("frozenwall", () -> new FrozenwallBlock());
+	public static final RegistryObject<Block> FROZENIRONORE = REGISTRY.register("frozenironore", () -> new FrozenironoreBlock());
 	public static final RegistryObject<Block> EMBERORE = REGISTRY.register("emberore", () -> new EmberoreBlock());
 	public static final RegistryObject<Block> MALACHITEORE = REGISTRY.register("malachiteore", () -> new MalachiteoreBlock());
 

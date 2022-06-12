@@ -3,39 +3,38 @@ package net.mcreator.theancientmod.item;
 
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 
-import net.mcreator.theancientmod.init.TheAncientModModItems;
-
-public class PlatinumswordItem extends SwordItem {
-	public PlatinumswordItem() {
+public class CopperShovelItem extends ShovelItem {
+	public CopperShovelItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1748;
+				return 381;
 			}
 
 			public float getSpeed() {
-				return 7f;
+				return 5f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 2.6000000000000005f;
+				return 0f;
 			}
 
 			public int getLevel() {
-				return 0;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {
-				return 11;
+				return 12;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TheAncientModModItems.PLATINUMINGOT.get()));
+				return Ingredient.of(new ItemStack(Items.COPPER_INGOT));
 			}
-		}, 3, -2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 1, -2.2999999999999998f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }

@@ -3,25 +3,25 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "platinumsword",
+    "texture": "coppersword",
     "customModelName": "Normal",
-    "name": "Platinum Sword",
+    "name": "Copper Sword",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
     },
     "toolType": "Sword",
-    "harvestLevel": 0,
-    "efficiency": 7.0,
-    "attackSpeed": 2.0,
-    "enchantability": 11,
-    "damageVsEntity": 4.6000000000000005,
-    "usageCount": 1748,
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 2.4,
+    "enchantability": 12,
+    "damageVsEntity": 3.2,
+    "usageCount": 762,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:Platinumingot"
+        "value": "Items.COPPER_INGOT"
       }
     ],
     "immuneToFire": false,

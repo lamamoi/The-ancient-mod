@@ -3,25 +3,25 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "platinumsword",
+    "texture": "copperpick",
     "customModelName": "Normal",
-    "name": "Platinum Sword",
+    "name": "Copper Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "TOOLS"
     },
-    "toolType": "Sword",
-    "harvestLevel": 0,
-    "efficiency": 7.0,
-    "attackSpeed": 2.0,
-    "enchantability": 11,
-    "damageVsEntity": 4.6000000000000005,
-    "usageCount": 1748,
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 1.7000000000000002,
+    "enchantability": 12,
+    "damageVsEntity": 2.5,
+    "usageCount": 381,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:Platinumingot"
+        "value": "Items.COPPER_INGOT"
       }
     ],
     "immuneToFire": false,
