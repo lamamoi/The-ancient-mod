@@ -24,6 +24,7 @@ import net.mcreator.theancientmod.item.PlatinumaxeItem;
 import net.mcreator.theancientmod.item.PlatinumarmorArmorItem;
 import net.mcreator.theancientmod.item.MalachiteItem;
 import net.mcreator.theancientmod.item.EmberItem;
+import net.mcreator.theancientmod.item.CopperarmorArmorItem;
 import net.mcreator.theancientmod.TheAncientModMod;
 
 public class TheAncientModModItems {
@@ -61,6 +62,14 @@ public class TheAncientModModItems {
 	public static final RegistryObject<Item> EMBERORE = block(TheAncientModModBlocks.EMBERORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> MALACHITE = REGISTRY.register("malachite", () -> new MalachiteItem());
 	public static final RegistryObject<Item> MALACHITEORE = block(TheAncientModModBlocks.MALACHITEORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> COPPERARMOR_ARMOR_HELMET = REGISTRY.register("copperarmor_armor_helmet",
+			() -> new CopperarmorArmorItem.Helmet());
+	public static final RegistryObject<Item> COPPERARMOR_ARMOR_CHESTPLATE = REGISTRY.register("copperarmor_armor_chestplate",
+			() -> new CopperarmorArmorItem.Chestplate());
+	public static final RegistryObject<Item> COPPERARMOR_ARMOR_LEGGINGS = REGISTRY.register("copperarmor_armor_leggings",
+			() -> new CopperarmorArmorItem.Leggings());
+	public static final RegistryObject<Item> COPPERARMOR_ARMOR_BOOTS = REGISTRY.register("copperarmor_armor_boots",
+			() -> new CopperarmorArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

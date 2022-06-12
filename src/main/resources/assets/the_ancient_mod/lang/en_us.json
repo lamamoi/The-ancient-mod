@@ -7,6 +7,7 @@
   "block.the_ancient_mod.frozenbrick": "Frozen Brick",
   "block.the_ancient_mod.platinumore": "Platinum Ore",
   "block.the_ancient_mod.frozenwall": "Frozen Wall",
+  "item.the_ancient_mod.copperarmor_armor_helmet": "Copper Helmet",
   "item.the_ancient_mod.malachite": "Malachite",
   "item.the_ancient_mod.platinumhoe": "Platinum Hoe",
   "entity.the_ancient_mod.dugk": "Dugk",
@@ -27,8 +28,11 @@
   "item.the_ancient_mod.platinumarmor_armor_boots": "Platinum Boots",
   "item.the_ancient_mod.rawplatinum": "Raw Platinum",
   "block.the_ancient_mod.frozencobblestone": "Frozen Cobblestone",
+  "item.the_ancient_mod.copperarmor_armor_chestplate": "Copper Chestplate",
   "item.the_ancient_mod.platinumingot": "Platinum Ingot",
   "item.the_ancient_mod.platinumarmor_armor_helmet": "Platinum Helmet",
   "biome.the_ancient_mod.undergrounddesert": "Undergrounddesert",
+  "item.the_ancient_mod.copperarmor_armor_boots": "Copper Boots",
+  "item.the_ancient_mod.copperarmor_armor_leggings": "Copper Leggings",
   "item.the_ancient_mod.dugk_spawn_egg": "Dugk Spawn Egg"
 }

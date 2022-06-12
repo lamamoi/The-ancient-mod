@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "the_ancient_mod:block/emberore"
+    },
+    "facing=east": {
+      "model": "the_ancient_mod:block/emberore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_ancient_mod:block/emberore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_ancient_mod:block/emberore",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "the_ancient_mod:block/emberore",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "the_ancient_mod:block/emberore",
+      "x": 90
     }
   }
 }
