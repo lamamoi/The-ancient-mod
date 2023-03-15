@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.sounds.SoundEvent;
@@ -24,11 +24,8 @@ import java.util.Collections;
 public class FrozenstoneBlock extends Block {
 	public FrozenstoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.stone.break")),
-						() -> new SoundEvent(new ResourceLocation("block.dripstone_block.step")),
-						() -> new SoundEvent(new ResourceLocation("block.dripstone_block.place")),
-						() -> new SoundEvent(new ResourceLocation("block.stone.hit")),
-						() -> new SoundEvent(new ResourceLocation("block.stone.fall"))))
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.stone.break")), () -> new SoundEvent(new ResourceLocation("block.dripstone_block.step")),
+						() -> new SoundEvent(new ResourceLocation("block.dripstone_block.place")), () -> new SoundEvent(new ResourceLocation("block.stone.hit")), () -> new SoundEvent(new ResourceLocation("block.stone.fall"))))
 				.strength(1.6500000000000001f, 4f).requiresCorrectToolForDrops().friction(0.7f));
 	}
 
@@ -39,7 +36,7 @@ public class FrozenstoneBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}

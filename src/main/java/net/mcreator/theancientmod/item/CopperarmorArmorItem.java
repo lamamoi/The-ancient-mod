@@ -50,7 +50,7 @@ public abstract class CopperarmorArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.3f;
+				return 0.30000000000000004f;
 			}
 
 			@Override
@@ -67,7 +67,7 @@ public abstract class CopperarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/copper_armor.png";
+			return "the_ancient_mod:textures/entities/copper_armor.png";
 		}
 	}
 
@@ -78,7 +78,7 @@ public abstract class CopperarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/copper_armor.png";
+			return "the_ancient_mod:textures/entities/copper_armor.png";
 		}
 	}
 
@@ -89,7 +89,7 @@ public abstract class CopperarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/copperarmor.png";
+			return "the_ancient_mod:textures/entities/copperarmor.png";
 		}
 	}
 
@@ -100,7 +100,7 @@ public abstract class CopperarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/copper_armor.png";
+			return "the_ancient_mod:textures/entities/copper_armor.png";
 		}
 	}
 }

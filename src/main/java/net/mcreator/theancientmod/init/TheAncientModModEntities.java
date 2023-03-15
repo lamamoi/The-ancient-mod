@@ -23,10 +23,9 @@ import net.mcreator.theancientmod.TheAncientModMod;
 public class TheAncientModModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, TheAncientModMod.MODID);
 	public static final RegistryObject<EntityType<DugkEntity>> DUGK = register("dugk",
-			EntityType.Builder.<DugkEntity>of(DugkEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(38)
-					.setUpdateInterval(3).setCustomClientFactory(DugkEntity::new)
+			EntityType.Builder.<DugkEntity>of(DugkEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(38).setUpdateInterval(3).setCustomClientFactory(DugkEntity::new)
 
-					.sized(0.3f, 0.4f));
+					.sized(0.30000000000000004f, 0.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

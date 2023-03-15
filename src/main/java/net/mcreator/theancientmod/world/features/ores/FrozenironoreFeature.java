@@ -42,11 +42,9 @@ public class FrozenironoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new FrozenironoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:frozenironore", FEATURE,
-				new OreConfiguration(FrozenironoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.FROZENIRONORE.get().defaultBlockState(), 18));
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:frozenironore", FEATURE, new OreConfiguration(FrozenironoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.FROZENIRONORE.get().defaultBlockState(), 18));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:frozenironore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(14), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(14), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

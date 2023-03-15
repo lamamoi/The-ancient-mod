@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "sandstone",
@@ -11,6 +11,7 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 4,
+    "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -47,6 +48,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -97,13 +99,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

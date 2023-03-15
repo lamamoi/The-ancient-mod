@@ -43,11 +43,9 @@ public class EmberoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new EmberoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:emberore", FEATURE,
-				new OreConfiguration(EmberoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.EMBERORE.get().defaultBlockState(), 5));
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:emberore", FEATURE, new OreConfiguration(EmberoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.EMBERORE.get().defaultBlockState(), 5));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:emberore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(11), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(11), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

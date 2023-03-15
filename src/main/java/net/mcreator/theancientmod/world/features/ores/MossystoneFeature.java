@@ -43,11 +43,9 @@ public class MossystoneFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new MossystoneFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:mossystone", FEATURE,
-				new OreConfiguration(MossystoneFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MOSSYSTONE.get().defaultBlockState(), 19));
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:mossystone", FEATURE, new OreConfiguration(MossystoneFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MOSSYSTONE.get().defaultBlockState(), 19));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:mossystone", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(26), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(26), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,8 +53,7 @@ public class MossystoneFeature extends OreFeature {
 		return PLACED_FEATURE;
 	}
 
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("bamboo_jungle"),
-			new ResourceLocation("the_ancient_mod:undergroundjungle"), new ResourceLocation("sparse_jungle"), new ResourceLocation("jungle"));
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("bamboo_jungle"), new ResourceLocation("the_ancient_mod:undergroundjungle"), new ResourceLocation("sparse_jungle"), new ResourceLocation("jungle"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public MossystoneFeature() {

@@ -43,11 +43,9 @@ public class MalachiteoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new MalachiteoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:malachiteore", FEATURE,
-				new OreConfiguration(MalachiteoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MALACHITEORE.get().defaultBlockState(), 5));
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:malachiteore", FEATURE, new OreConfiguration(MalachiteoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.MALACHITEORE.get().defaultBlockState(), 5));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:malachiteore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(12), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(48)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(12), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(48)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

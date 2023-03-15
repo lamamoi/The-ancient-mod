@@ -17,8 +17,7 @@ public class FrozenironfortuneProcedure {
 			return;
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, 1));
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE,
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 1) {
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 1) {
 			if (Math.random() <= 0.3) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.IRON_NUGGET));
@@ -27,8 +26,7 @@ public class FrozenironfortuneProcedure {
 				}
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE,
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 2) {
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 2) {
 			if (Math.random() <= 0.32) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.IRON_NUGGET));
@@ -44,8 +42,7 @@ public class FrozenironfortuneProcedure {
 				}
 			}
 		}
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE,
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 3) {
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 3) {
 			if (Math.random() <= 0.36) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.IRON_NUGGET));

@@ -4,6 +4,9 @@ package net.mcreator.theancientmod.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
@@ -14,7 +17,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
@@ -30,8 +33,7 @@ import java.util.Collections;
 
 public class PlatinumoreBlock extends Block {
 	public PlatinumoreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.WARPED_WART_BLOCK).sound(SoundType.DEEPSLATE).strength(3.5f, 6f)
-				.requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.WARPED_WART_BLOCK).sound(SoundType.DEEPSLATE).strength(3.5f, 6f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -45,8 +47,13 @@ public class PlatinumoreBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}

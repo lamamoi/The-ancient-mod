@@ -43,11 +43,9 @@ public class PlatinumoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new PlatinumoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:platinumore", FEATURE,
-				new OreConfiguration(PlatinumoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.PLATINUMORE.get().defaultBlockState(), 3));
+		CONFIGURED_FEATURE = FeatureUtils.register("the_ancient_mod:platinumore", FEATURE, new OreConfiguration(PlatinumoreFeatureRuleTest.INSTANCE, TheAncientModModBlocks.PLATINUMORE.get().defaultBlockState(), 3));
 		PLACED_FEATURE = PlacementUtils.register("the_ancient_mod:platinumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(7), InSquarePlacement.spread(),
-						HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(7), InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

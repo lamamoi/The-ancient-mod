@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -46,6 +46,11 @@ public class FrozenironoreBlock extends Block {
 		builder.add(FACING);
 	}
 
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+	}
+
 	public BlockState rotate(BlockState state, Rotation rot) {
 		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
 	}
@@ -55,14 +60,8 @@ public class FrozenironoreBlock extends Block {
 	}
 
 	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		Direction facing = context.getClickedFace();;
-		return this.defaultBlockState().setValue(FACING, facing);
-	}
-
-	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 1;
 		return false;
 	}

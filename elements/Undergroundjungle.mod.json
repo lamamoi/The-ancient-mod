@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Undergroundjungle",
@@ -46,18 +46,31 @@
       "value": "SPORE_BLOSSOM_AIR"
     },
     "particlesProbability": 0.1,
-    "biomeCategory": "UNDERGROUND",
     "rainingPossibility": 0.9,
     "temperature": 0.95,
-    "baseHeight": -0.19999999999999998,
-    "heightVariation": 0.2,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
-    "biomeDictionaryTypes": [
-      "JUNGLE"
-    ],
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 0.20000000000000004,
+      "max": 0.4
+    },
+    "genHumidity": {
+      "min": 0.7000000000000001,
+      "max": 0.9
+    },
+    "genContinentalness": {
+      "min": 0.38,
+      "max": 0.58
+    },
+    "genErosion": {
+      "min": 0.7000000000000001,
+      "max": 0.9
+    },
+    "genWeirdness": {
+      "min": -0.34034363515257804,
+      "max": -0.14034363515257806
+    },
     "grassPerChunk": 5,
     "seagrassPerChunk": 3,
     "flowersPerChunk": 4,

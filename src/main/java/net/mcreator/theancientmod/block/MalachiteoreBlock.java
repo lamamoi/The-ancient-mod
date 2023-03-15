@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.sounds.SoundEvent;
@@ -36,11 +36,8 @@ public class MalachiteoreBlock extends Block {
 
 	public MalachiteoreBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.amethyst_block.hit")),
-						() -> new SoundEvent(new ResourceLocation("block.gilded_blackstone.step")),
-						() -> new SoundEvent(new ResourceLocation("block.gilded_blackstone.place")),
-						() -> new SoundEvent(new ResourceLocation("block.dripstone_block.hit")),
-						() -> new SoundEvent(new ResourceLocation("block.dripstone_block.fall"))))
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.amethyst_block.hit")), () -> new SoundEvent(new ResourceLocation("block.gilded_blackstone.step")),
+						() -> new SoundEvent(new ResourceLocation("block.gilded_blackstone.place")), () -> new SoundEvent(new ResourceLocation("block.dripstone_block.hit")), () -> new SoundEvent(new ResourceLocation("block.dripstone_block.fall"))))
 				.strength(1.5f, 6f).requiresCorrectToolForDrops());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
@@ -55,6 +52,11 @@ public class MalachiteoreBlock extends Block {
 		builder.add(FACING);
 	}
 
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+	}
+
 	public BlockState rotate(BlockState state, Rotation rot) {
 		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
 	}
@@ -64,14 +66,8 @@ public class MalachiteoreBlock extends Block {
 	}
 
 	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		Direction facing = context.getClickedFace();;
-		return this.defaultBlockState().setValue(FACING, facing);
-	}
-
-	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}

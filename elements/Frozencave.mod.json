@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Frozencave",
@@ -46,18 +46,31 @@
       "value": "SNOWFLAKE"
     },
     "particlesProbability": 0.1,
-    "biomeCategory": "UNDERGROUND",
     "rainingPossibility": 0.7,
     "temperature": -0.5,
-    "baseHeight": -0.30000000000000004,
-    "heightVariation": 0.19999999999999998,
     "spawnBiome": true,
-    "spawnBiomeNether": false,
     "spawnInCaves": true,
-    "biomeWeight": 5,
-    "biomeDictionaryTypes": [
-      "SNOWY"
-    ],
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.7666666666666667,
+      "max": -0.5666666666666668
+    },
+    "genHumidity": {
+      "min": 0.29999999999999993,
+      "max": 0.4999999999999999
+    },
+    "genContinentalness": {
+      "min": 0.37,
+      "max": 0.5700000000000001
+    },
+    "genErosion": {
+      "min": 0.7000000000000001,
+      "max": 0.9
+    },
+    "genWeirdness": {
+      "min": 0.3149913064081432,
+      "max": 0.5149913064081432
+    },
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

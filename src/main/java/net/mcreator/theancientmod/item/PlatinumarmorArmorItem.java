@@ -68,7 +68,7 @@ public abstract class PlatinumarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/iron__layer_1.png";
+			return "the_ancient_mod:textures/entities/iron__layer_1.png";
 		}
 	}
 
@@ -79,7 +79,7 @@ public abstract class PlatinumarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/iron__layer_1.png";
+			return "the_ancient_mod:textures/entities/iron__layer_1.png";
 		}
 	}
 
@@ -90,7 +90,7 @@ public abstract class PlatinumarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/iron__layer_2.png";
+			return "the_ancient_mod:textures/entities/iron__layer_2.png";
 		}
 	}
 
@@ -101,7 +101,7 @@ public abstract class PlatinumarmorArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "the_ancient_mod:textures/iron__layer_1.png";
+			return "the_ancient_mod:textures/entities/iron__layer_1.png";
 		}
 	}
 }

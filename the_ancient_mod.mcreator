@@ -6,7 +6,12 @@
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "undergrounddesert"
+      "registry_name": "undergrounddesert",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/biome/UndergrounddesertBiome.java"
+        ]
+      }
     },
     {
       "name": "Undergroundmesa",
@@ -14,7 +19,12 @@
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "undergroundmesa"
+      "registry_name": "undergroundmesa",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/biome/UndergroundmesaBiome.java"
+        ]
+      }
     },
     {
       "name": "Desertspawner",
@@ -22,7 +32,12 @@
       "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "desertspawner"
+      "registry_name": "desertspawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/DesertspawnerFeature.java"
+        ]
+      }
     },
     {
       "name": "MesaSpawner",
@@ -30,7 +45,12 @@
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mesa_spawner"
+      "registry_name": "mesa_spawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/MesaSpawnerFeature.java"
+        ]
+      }
     },
     {
       "name": "Ruin1",
@@ -38,7 +58,12 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ruin_1"
+      "registry_name": "ruin_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Ruin1Feature.java"
+        ]
+      }
     },
     {
       "name": "Sand1",
@@ -46,7 +71,12 @@
       "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sand_1"
+      "registry_name": "sand_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sand1Feature.java"
+        ]
+      }
     },
     {
       "name": "Sand2",
@@ -54,7 +84,12 @@
       "sortid": 37,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sand_2"
+      "registry_name": "sand_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sand2Feature.java"
+        ]
+      }
     },
     {
       "name": "Sand3",
@@ -62,7 +97,12 @@
       "sortid": 38,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sand_3"
+      "registry_name": "sand_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sand3Feature.java"
+        ]
+      }
     },
     {
       "name": "Red1",
@@ -70,7 +110,12 @@
       "sortid": 39,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "red_1"
+      "registry_name": "red_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Red1Feature.java"
+        ]
+      }
     },
     {
       "name": "Red2",
@@ -78,7 +123,12 @@
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "red_2"
+      "registry_name": "red_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Red2Feature.java"
+        ]
+      }
     },
     {
       "name": "Red3",
@@ -86,7 +136,12 @@
       "sortid": 41,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "red_3"
+      "registry_name": "red_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Red3Feature.java"
+        ]
+      }
     },
     {
       "name": "Bone1",
@@ -94,7 +149,12 @@
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bone_1"
+      "registry_name": "bone_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Bone1Feature.java"
+        ]
+      }
     },
     {
       "name": "Bone2",
@@ -102,7 +162,12 @@
       "sortid": 43,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bone_2"
+      "registry_name": "bone_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Bone2Feature.java"
+        ]
+      }
     },
     {
       "name": "Bone3",
@@ -110,7 +175,12 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bone_3"
+      "registry_name": "bone_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Bone3Feature.java"
+        ]
+      }
     },
     {
       "name": "Amongusbone",
@@ -118,7 +188,12 @@
       "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "amongusbone"
+      "registry_name": "amongusbone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/AmongusboneFeature.java"
+        ]
+      }
     },
     {
       "name": "Sandrock1",
@@ -126,7 +201,12 @@
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sandrock_1"
+      "registry_name": "sandrock_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sandrock1Feature.java"
+        ]
+      }
     },
     {
       "name": "Sandrock2",
@@ -134,7 +214,12 @@
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sandrock_2"
+      "registry_name": "sandrock_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sandrock2Feature.java"
+        ]
+      }
     },
     {
       "name": "Sandrock3",
@@ -142,7 +227,12 @@
       "sortid": 48,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sandrock_3"
+      "registry_name": "sandrock_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Sandrock3Feature.java"
+        ]
+      }
     },
     {
       "name": "Redrock1",
@@ -150,7 +240,12 @@
       "sortid": 49,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "redrock_1"
+      "registry_name": "redrock_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Redrock1Feature.java"
+        ]
+      }
     },
     {
       "name": "Redrock2",
@@ -158,7 +253,12 @@
       "sortid": 50,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "redrock_2"
+      "registry_name": "redrock_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Redrock2Feature.java"
+        ]
+      }
     },
     {
       "name": "Redrock3",
@@ -166,7 +266,12 @@
       "sortid": 51,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "redrock_3"
+      "registry_name": "redrock_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Redrock3Feature.java"
+        ]
+      }
     },
     {
       "name": "Dugk",
@@ -174,7 +279,14 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dugk"
+      "registry_name": "dugk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/entity/DugkEntity.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/dugk_spawn_egg.json",
+          "src/main/java/net/mcreator/theancientmod/client/renderer/DugkRenderer.java"
+        ]
+      }
     },
     {
       "name": "Witheredspawner",
@@ -182,7 +294,12 @@
       "sortid": 52,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "witheredspawner"
+      "registry_name": "witheredspawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/WitheredspawnerFeature.java"
+        ]
+      }
     },
     {
       "name": "Silvernest",
@@ -190,7 +307,12 @@
       "sortid": 53,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "silvernest"
+      "registry_name": "silvernest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/SilvernestFeature.java"
+        ]
+      }
     },
     {
       "name": "Deepslateforge",
@@ -198,7 +320,12 @@
       "sortid": 54,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "deepslateforge"
+      "registry_name": "deepslateforge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/DeepslateforgeFeature.java"
+        ]
+      }
     },
     {
       "name": "Undergroundjungle",
@@ -206,7 +333,12 @@
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "undergroundjungle"
+      "registry_name": "undergroundjungle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/biome/UndergroundjungleBiome.java"
+        ]
+      }
     },
     {
       "name": "Market",
@@ -214,7 +346,12 @@
       "sortid": 56,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "market"
+      "registry_name": "market",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/MarketFeature.java"
+        ]
+      }
     },
     {
       "name": "Junglespawner",
@@ -222,7 +359,12 @@
       "sortid": 57,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "junglespawner"
+      "registry_name": "junglespawner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/JunglespawnerFeature.java"
+        ]
+      }
     },
     {
       "name": "Rock1",
@@ -230,7 +372,12 @@
       "sortid": 58,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rock_1"
+      "registry_name": "rock_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Rock1Feature.java"
+        ]
+      }
     },
     {
       "name": "Rock2",
@@ -238,7 +385,12 @@
       "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rock_2"
+      "registry_name": "rock_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Rock2Feature.java"
+        ]
+      }
     },
     {
       "name": "Rock3",
@@ -246,7 +398,12 @@
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rock_3"
+      "registry_name": "rock_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/Rock3Feature.java"
+        ]
+      }
     },
     {
       "name": "Bush",
@@ -254,7 +411,12 @@
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bush"
+      "registry_name": "bush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/BushFeature.java"
+        ]
+      }
     },
     {
       "name": "Mossystone",
@@ -262,7 +424,16 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mossystone"
+      "registry_name": "mossystone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/block/MossystoneBlock.java",
+          "src/main/java/net/mcreator/theancientmod/world/features/ores/MossystoneFeature.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/mossystone.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/mossystone.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/mossystone.json"
+        ]
+      }
     },
     {
       "name": "Mossystonecooked",
@@ -270,7 +441,12 @@
       "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mossystonecooked"
+      "registry_name": "mossystonecooked",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/mossystonecooked.json"
+        ]
+      }
     },
     {
       "name": "Platinumore",
@@ -278,7 +454,16 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumore"
+      "registry_name": "platinumore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/blockstates/platinumore.json",
+          "src/main/java/net/mcreator/theancientmod/world/features/ores/PlatinumoreFeature.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumore.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/platinumore.json",
+          "src/main/java/net/mcreator/theancientmod/block/PlatinumoreBlock.java"
+        ]
+      }
     },
     {
       "name": "Rawplatinum",
@@ -286,7 +471,13 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rawplatinum"
+      "registry_name": "rawplatinum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/RawplatinumItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/rawplatinum.json"
+        ]
+      }
     },
     {
       "name": "PlatinumoreBlockDestroyedByPlayer",
@@ -296,6 +487,9 @@
       "locked_code": false,
       "registry_name": "platinumore_block_destroyed_by_player",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/procedures/PlatinumoreBlockDestroyedByPlayerProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -326,7 +520,13 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumingot"
+      "registry_name": "platinumingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumingotItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumingot.json"
+        ]
+      }
     },
     {
       "name": "Rawplatinumtoingot",
@@ -334,7 +534,12 @@
       "sortid": 64,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rawplatinumtoingot"
+      "registry_name": "rawplatinumtoingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/rawplatinumtoingot.json"
+        ]
+      }
     },
     {
       "name": "Rawplatinumtoingot2",
@@ -342,7 +547,12 @@
       "sortid": 65,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rawplatinumtoingot_2"
+      "registry_name": "rawplatinumtoingot_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/rawplatinumtoingot_2.json"
+        ]
+      }
     },
     {
       "name": "Platinumsword",
@@ -350,7 +560,13 @@
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumsword"
+      "registry_name": "platinumsword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumswordItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumsword.json"
+        ]
+      }
     },
     {
       "name": "Platinumpick",
@@ -358,7 +574,13 @@
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumpick"
+      "registry_name": "platinumpick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumpickItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumpick.json"
+        ]
+      }
     },
     {
       "name": "Platinumaxe",
@@ -366,7 +588,13 @@
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumaxe"
+      "registry_name": "platinumaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumaxeItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumaxe.json"
+        ]
+      }
     },
     {
       "name": "Platinumshovel",
@@ -374,7 +602,13 @@
       "sortid": 27,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumshovel"
+      "registry_name": "platinumshovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumshovelItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumshovel.json"
+        ]
+      }
     },
     {
       "name": "Platinumhoe",
@@ -382,7 +616,13 @@
       "sortid": 29,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumhoe"
+      "registry_name": "platinumhoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumhoeItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumhoe.json"
+        ]
+      }
     },
     {
       "name": "Platinumswordcraft",
@@ -390,7 +630,12 @@
       "sortid": 66,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumswordcraft"
+      "registry_name": "platinumswordcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumswordcraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumpickcraft",
@@ -398,7 +643,12 @@
       "sortid": 67,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumpickcraft"
+      "registry_name": "platinumpickcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumpickcraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumaxecraft",
@@ -406,7 +656,12 @@
       "sortid": 68,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumaxecraft"
+      "registry_name": "platinumaxecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumaxecraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumshovelcraft",
@@ -414,7 +669,12 @@
       "sortid": 69,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumshovelcraft"
+      "registry_name": "platinumshovelcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumshovelcraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumhoecraft",
@@ -422,7 +682,12 @@
       "sortid": 70,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumhoecraft"
+      "registry_name": "platinumhoecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumhoecraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumblock",
@@ -430,7 +695,15 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumblock"
+      "registry_name": "platinumblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/block/platinumblock.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumblock.json",
+          "src/main/java/net/mcreator/theancientmod/block/PlatinumblockBlock.java",
+          "src/main/resources/assets/the_ancient_mod/blockstates/platinumblock.json"
+        ]
+      }
     },
     {
       "name": "Platinumblockcraft",
@@ -438,7 +711,12 @@
       "sortid": 71,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumblockcraft"
+      "registry_name": "platinumblockcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumblockcraft.json"
+        ]
+      }
     },
     {
       "name": "Platinumingotwithblock",
@@ -446,7 +724,12 @@
       "sortid": 72,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumingotwithblock"
+      "registry_name": "platinumingotwithblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumingotwithblock.json"
+        ]
+      }
     },
     {
       "name": "Frozenstone",
@@ -454,7 +737,15 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenstone"
+      "registry_name": "frozenstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenstone.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenstoneBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenstone.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenstone.json"
+        ]
+      }
     },
     {
       "name": "Frozencave",
@@ -462,7 +753,12 @@
       "sortid": 73,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozencave"
+      "registry_name": "frozencave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/biome/FrozencaveBiome.java"
+        ]
+      }
     },
     {
       "name": "Frozenbrick",
@@ -470,7 +766,15 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenbrick"
+      "registry_name": "frozenbrick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenbrick.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenbrick.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenbrick.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenbrickBlock.java"
+        ]
+      }
     },
     {
       "name": "Frozenchiseledbricks",
@@ -478,7 +782,15 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenchiseledbricks"
+      "registry_name": "frozenchiseledbricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenchiseledbricks.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenchiseledbricksBlock.java",
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenchiseledbricks.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenchiseledbricks.json"
+        ]
+      }
     },
     {
       "name": "Frozencobblestone",
@@ -486,7 +798,15 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozencobblestone"
+      "registry_name": "frozencobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozencobblestone.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozencobblestoneBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozencobblestone.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozencobblestone.json"
+        ]
+      }
     },
     {
       "name": "Frozenironore",
@@ -494,7 +814,16 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenironore"
+      "registry_name": "frozenironore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/world/features/ores/FrozenironoreFeature.java",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenironoreBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenironore.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenironore.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenironore.json"
+        ]
+      }
     },
     {
       "name": "Frozenstairs",
@@ -502,7 +831,17 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenstairs"
+      "registry_name": "frozenstairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenstairs.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenstairs_inner.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenstairs.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenstairs_outer.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenstairsBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenstairs.json"
+        ]
+      }
     },
     {
       "name": "Frozenslab",
@@ -510,7 +849,17 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenslab"
+      "registry_name": "frozenslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenslab.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenslab.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenslab_top.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenslab_full.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenslabBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenslab.json"
+        ]
+      }
     },
     {
       "name": "Frozenwall",
@@ -518,7 +867,18 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "frozenwall"
+      "registry_name": "frozenwall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenwall_inventory.json",
+          "src/main/java/net/mcreator/theancientmod/block/FrozenwallBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/frozenwall.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/frozenwall.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenwall.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenwall_post.json",
+          "src/main/resources/assets/the_ancient_mod/models/block/frozenwall_side_tall.json"
+        ]
+      }
     },
     {
       "name": "PlatinumarmorArmor",
@@ -531,7 +891,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumarmor_armor_helmet.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumarmor_armor_leggings.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumarmor_armor_chestplate.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/platinumarmor_armor_boots.json",
+          "src/main/java/net/mcreator/theancientmod/item/PlatinumarmorArmorItem.java"
+        ]
       }
     },
     {
@@ -540,7 +907,12 @@
       "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumarmor_armor_helmet_recipe"
+      "registry_name": "platinumarmor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumarmor_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "PlatinumarmorArmorBodyRecipe",
@@ -548,7 +920,12 @@
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumarmor_armor_body_recipe"
+      "registry_name": "platinumarmor_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumarmor_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "PlatinumarmorArmorLeggingsRecipe",
@@ -556,7 +933,12 @@
       "sortid": 76,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumarmor_armor_leggings_recipe"
+      "registry_name": "platinumarmor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumarmor_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "PlatinumarmorArmorBootsRecipe",
@@ -564,7 +946,12 @@
       "sortid": 77,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "platinumarmor_armor_boots_recipe"
+      "registry_name": "platinumarmor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/platinumarmor_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "Ember",
@@ -572,7 +959,13 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ember"
+      "registry_name": "ember",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/ember.json",
+          "src/main/java/net/mcreator/theancientmod/item/EmberItem.java"
+        ]
+      }
     },
     {
       "name": "Emberore",
@@ -580,7 +973,16 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "emberore"
+      "registry_name": "emberore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/block/emberore.json",
+          "src/main/java/net/mcreator/theancientmod/world/features/ores/EmberoreFeature.java",
+          "src/main/java/net/mcreator/theancientmod/block/EmberoreBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/emberore.json",
+          "src/main/resources/assets/the_ancient_mod/blockstates/emberore.json"
+        ]
+      }
     },
     {
       "name": "Malachite",
@@ -588,7 +990,13 @@
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "malachite"
+      "registry_name": "malachite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/MalachiteItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/malachite.json"
+        ]
+      }
     },
     {
       "name": "Malachiteore",
@@ -596,7 +1004,16 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "malachiteore"
+      "registry_name": "malachiteore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/blockstates/malachiteore.json",
+          "src/main/java/net/mcreator/theancientmod/world/features/ores/MalachiteoreFeature.java",
+          "src/main/java/net/mcreator/theancientmod/block/MalachiteoreBlock.java",
+          "src/main/resources/assets/the_ancient_mod/models/block/malachiteore.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/malachiteore.json"
+        ]
+      }
     },
     {
       "name": "Frozenironfortune",
@@ -606,6 +1023,9 @@
       "locked_code": false,
       "registry_name": "frozenironfortune",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/procedures/FrozenironfortuneProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -638,6 +1058,9 @@
       "locked_code": false,
       "registry_name": "amberfortune",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/procedures/AmberfortuneProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -670,6 +1093,9 @@
       "locked_code": false,
       "registry_name": "malachitefortune",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/procedures/MalachitefortuneProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -705,7 +1131,14 @@
         "eh": true,
         "el": true,
         "eb": true,
-        "ec": true
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/copperarmor_armor_chestplate.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/copperarmor_armor_boots.json",
+          "src/main/java/net/mcreator/theancientmod/item/CopperarmorArmorItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/copperarmor_armor_helmet.json",
+          "src/main/resources/assets/the_ancient_mod/models/item/copperarmor_armor_leggings.json"
+        ]
       }
     },
     {
@@ -714,7 +1147,12 @@
       "sortid": 81,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copperarmor_armor_helmet_recipe"
+      "registry_name": "copperarmor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copperarmor_armor_helmet_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperarmorArmorBodyRecipe",
@@ -722,7 +1160,12 @@
       "sortid": 82,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copperarmor_armor_body_recipe"
+      "registry_name": "copperarmor_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copperarmor_armor_body_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperarmorArmorLeggingsRecipe",
@@ -730,7 +1173,12 @@
       "sortid": 83,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copperarmor_armor_leggings_recipe"
+      "registry_name": "copperarmor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copperarmor_armor_leggings_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperarmorArmorBootsRecipe",
@@ -738,7 +1186,12 @@
       "sortid": 84,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copperarmor_armor_boots_recipe"
+      "registry_name": "copperarmor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copperarmor_armor_boots_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperPickaxe",
@@ -746,7 +1199,13 @@
       "sortid": 24,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_pickaxe"
+      "registry_name": "copper_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/copper_pickaxe.json",
+          "src/main/java/net/mcreator/theancientmod/item/CopperPickaxeItem.java"
+        ]
+      }
     },
     {
       "name": "CopperAxe",
@@ -754,7 +1213,13 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_axe"
+      "registry_name": "copper_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/CopperAxeItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/copper_axe.json"
+        ]
+      }
     },
     {
       "name": "CopperSword",
@@ -762,7 +1227,13 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_sword"
+      "registry_name": "copper_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/CopperSwordItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/copper_sword.json"
+        ]
+      }
     },
     {
       "name": "CopperShovel",
@@ -770,7 +1241,13 @@
       "sortid": 28,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_shovel"
+      "registry_name": "copper_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_ancient_mod/models/item/copper_shovel.json",
+          "src/main/java/net/mcreator/theancientmod/item/CopperShovelItem.java"
+        ]
+      }
     },
     {
       "name": "CopperHoe",
@@ -778,7 +1255,13 @@
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_hoe"
+      "registry_name": "copper_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/theancientmod/item/CopperHoeItem.java",
+          "src/main/resources/assets/the_ancient_mod/models/item/copper_hoe.json"
+        ]
+      }
     },
     {
       "name": "CopperPickaxeRecipe",
@@ -786,7 +1269,12 @@
       "sortid": 85,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_pickaxe_recipe"
+      "registry_name": "copper_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copper_pickaxe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperAxeRecipe",
@@ -794,7 +1282,12 @@
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_axe_recipe"
+      "registry_name": "copper_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copper_axe_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperSwordRecipe",
@@ -802,7 +1295,12 @@
       "sortid": 87,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_sword_recipe"
+      "registry_name": "copper_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copper_sword_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperShovelRecipe",
@@ -810,7 +1308,12 @@
       "sortid": 88,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_shovel_recipe"
+      "registry_name": "copper_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copper_shovel_recipe.json"
+        ]
+      }
     },
     {
       "name": "CopperHoeRecipe",
@@ -818,7 +1321,12 @@
       "sortid": 89,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "copper_hoe_recipe"
+      "registry_name": "copper_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_ancient_mod/recipes/copper_hoe_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -890,5 +1398,5 @@
     "modElementsPackage": "net.mcreator.theancientmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202300110610
 }

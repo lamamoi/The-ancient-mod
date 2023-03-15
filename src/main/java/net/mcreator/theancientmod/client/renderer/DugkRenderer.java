@@ -10,11 +10,11 @@ import net.mcreator.theancientmod.client.model.Modelcustom_model;
 
 public class DugkRenderer extends MobRenderer<DugkEntity, Modelcustom_model<DugkEntity>> {
 	public DugkRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelcustom_model(context.bakeLayer(Modelcustom_model.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(DugkEntity entity) {
-		return new ResourceLocation("the_ancient_mod:textures/dugk.png");
+		return new ResourceLocation("the_ancient_mod:textures/entities/dugk.png");
 	}
 }
